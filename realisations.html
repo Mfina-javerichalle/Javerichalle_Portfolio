@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Javerichalle</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- police (typographie) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+   
+  
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+
+    <!-- HEADER -->
+   <header data-aos="zoom-in-right" data-aos-delay="200">
+     <h1>Javerichalle MFINA</h1>
+      <!-- Bouton Burger -->
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+     <!-- Menu principal -->
+     <nav id="nav-menu">
+       <ul>
+         <li><a href="index1.html#profil">Profil</a></li>
+         <li><a href="index1.html#realisations">Réalisations</a></li>
+         <li><a href="index1.html#experencces_professionnelles">Experencces</a></li>
+         <li><a href="index1.html#parcours">parcours</a></li>
+         <li><a href="index1.html#veille">Veille</a></li>
+         <li><a href="index1.html#contact">Contact</a></li>
+       </ul>
+     </nav>
+   </header>
+
+<main>
+      <br><br><br><br>
+  <section class="realisations">
+   <h2 data-aos="fade-right" data-aos-delay="1000">Réalisations</h2>
+    <!--  1 — Photos gauche / Texte droite -->
+    <div class="projet-section">
+        <div class="projet-container">
+
+            <div class="mockup" data-aos="fade-right" data-aos-delay="300">
+                <img src="jaellehair_mockup_ultralight.jpg" class="mockup-desktop" alt="">
+            </div>
+
+            <div class="projet-texte"data-aos="fade-left" data-aos-delay="300">
+                <h3>Site Jaëlle Hair</h3>
+                <p><strong>Technologies :</strong> HTML, CSS, JavaScript, PHP</p>
+                <p>
+                    Création du site vitrine professionnel pour mon salon <strong>Jaëlle Hair</strong>.
+                    Prestations, tarifs, galerie, contact. Projet complet réalisé de A à Z.
+                </p>
+                <div class="projet-links">
+                    <a href="https://jaelle-hair.fr" class="btn" target="_blank">Voir le site</a>
+                    <a href="https://github.com/mfinaJaverichalle" class="btn-secondary" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+        </div>
+      </div>
+
+    <!--2 — Texte gauche / Photos droite-->
+    <div class="projet-section">
+        <div class="projet-container reverse">
+
+            <div class="mockup" data-aos="fade-left" data-aos-delay="300">
+                <img src="allocation_mockup_ultralight (1).jpg" class="mockup-desktop" alt="">
+            </div>
+
+            <div class="projet-texte" data-aos="fade-right" data-aos-delay="300">
+                <h3>Application de Calcul d’Allocations</h3>
+                <p><strong>Technologies :</strong> PHP, MySQL, HTML, CSS</p>
+                <p>Développement d’une application web permettant de calculer automatiquement les allocations 
+                  selon les critères de revenus et de composition familiale, avec gestion des données via une base MySQL.</p>
+              <div class="projet-links">
+                   <a href="http://localhost/Calculatrice/index.php" target="_blank" class="btn">Voir le site</a>
+                   <a href="https://github.com/mfinaJaverichalle" target="_blank" class="btn-secondary">Voir GitHub</a>
+             </div>
+      </div>
+        </div>
+      </div>
+
+    <!-- 3 — Photos gauche / Texte droite  -->
+    <div class="projet-section">
+        <div class="projet-container">
+
+            <div class="mockup"  data-aos="fade-right" data-aos-delay="300">
+                <img src="businessprive_mockup_ultralight (1).jpg" class="mockup-desktop" alt="">
+              
+            </div>
+
+            <div class="projet-texte" data-aos="fade-left" data-aos-delay="300">
+             <h3>Site Vitrine Business-Privé</h3>
+             <p><strong>Technologies :</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+             <p>Développement complet d’un site vitrine responsive pour une entreprise privée.</p>
+             <div class="projet-links">
+              <a href="https://business-prive.com/" target="_blank" class="btn">Voir le site</a>
+              <a href="https://github.com/mfinaJaverichalle" target="_blank" class="btn-secondary">Voir GitHub</a>
+             </div>
+            </div>
+
+        </div>
+      </div>
+    </section> 
+  
+
+   
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-left">
+            <h3>MFINA</h3>
+            <p>Développeur Web & Mobile</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="mailto:mfinajaverichalle@gmail.com">Email</a>
+            <a href="https://github.com/mfinaJaverichalle" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+
+        <div class="footer-right">
+            <p>© 2025 Tous droits réservés.</p>
+        </div>
+
+    </div>
+</footer>
+
+<a href="#profil" class="scroll-top-btn">↑</a>
+
+
+    
+ <!-- Font Awesome pour les icônes générales -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a2e0e9c6f0.js" crossorigin="anonymous"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+     AOS.init({
+     duration: 1000, // durée des animations en ms
+     once: false 
+     });
+  </script>
+
+  <!-- menu burger -->
+  <script>
+     const menuToggle = document.querySelector('.menu-toggle');
+     const navMenu = document.querySelector('nav ul');
+     const navLinks = document.querySelectorAll('nav a');
+
+     // Ouvrir / fermer le menu quand on clique sur le burger
+     menuToggle.addEventListener('click', () => {
+     navMenu.classList.toggle('show');
+     });
+
+     // Fermer le menu quand on clique sur un lien
+     navLinks.forEach(link => {
+     link.addEventListener('click', () => {
+     navMenu.classList.remove('show');
+      });
+     });
+  </script>
+
+</body>
+</html>
