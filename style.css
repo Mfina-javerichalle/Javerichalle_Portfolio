@@ -15,11 +15,11 @@ header {
   padding: 20px 60px;
   position: fixed;
   width: 100%;
+  height: 100px;
   background: white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.09);
   z-index: 100;
 }
-
 header h1 {
   color: #07248b;
   font-weight: 700;
@@ -31,14 +31,12 @@ nav ul {
   display: flex;
   gap: 40px;
 }
-
 nav a {
   text-decoration: none;
   color:  #07248b;
   font-weight: 600;
   transition: 0.2s;
 }
-
 nav a:hover,
 nav a.active {
   color:#002b33;
@@ -85,33 +83,74 @@ nav a.active {
     flex-wrap: wrap;
   }
 }
-/*  HERO SECTION  */
+
+
+
+
+
+/* SECTION PROFIL */
+#profil {
+  position: relative;
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background: linear-gradient(120deg, #f7f7fb, #eceeff, #f3f7ff);
+  z-index: 0; /* Base */
+}
+/* --- BULLE GAUCHE --- */
+#profil::before {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.95;
+  z-index: -2;   /* 👈 toujours derrière tout */
+  left: -60px;
+  top: -60px;
+  background: #ffffff;
+}
+/* --- DÉGRADÉ BAS --- */
+#profil::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(to bottom, rgba(228, 228, 244, 0), #ffffff);
+  z-index: -1; /* 👈 aussi derrière le contenu */
+  pointer-events: none;
+}
 .hero {
+  position: relative;
+  z-index: 10; /* 👈 texte + image passent toujours devant */
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  padding: 120px 80px 0;
+  padding: 80px 80px 0;
 }
-
 .hero-text h2 {
   font-size: 42px;
   font-weight: 700;
   color: #07248b;
+    margin-bottom: 10px;
+}
+.hero-text h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #07248b;
+  margin-top: -10px;
   margin-bottom: 30px;
 }
-
-.hero-text h2 span {
-  color: #07248b;
-}
-
 .hero-text p {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.8;
   margin-bottom: 20px;
   color: #1a1a1a;
 }
-
 .btn {
   display: inline-block;
   margin-top: 40px;
@@ -123,7 +162,6 @@ nav a.active {
   text-decoration: none;
   transition: 0.2s;
 }
-
 .btn:hover {
   background-color:  #07248b;
 }
@@ -131,16 +169,17 @@ nav a.active {
 /* IMAGE SECTION */
 .jav-image {
   position: relative;
-  width: 300px;
-  height: 500px;
+  width: 250px;
+  height: 350px;
+  margin-top: -80px;
+  margin-left: 100px;
 }
-
 .jav-image img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 25%;
+  border-radius: 35%;
   z-index: 2;
 }
 
@@ -177,7 +216,6 @@ nav a.active {
   gap: 15px;
   margin-top: 20px;
 }
-
 .cv-buttons .btn-cv {
   display: inline-block;
   text-decoration: none;
@@ -188,7 +226,6 @@ nav a.active {
   border-radius: 8px;
   transition: all 0.3s ease;
 }
-
 .cv-buttons .btn-cv:hover {
   background-color: #07248b;
   color: white;
@@ -238,20 +275,17 @@ nav a.active {
 }
 
 
-
 .realisations h2 {
   font-size: 2.5rem;
   color: #0d1b2a;
   text-align: center;
   margin-top: 40px;
 }
-
 .projet-section {
   
    width: 100%;
    padding: 80px 5%;
   }
-
 .projet-container {
  display: flex;
  align-items: center;
@@ -276,36 +310,30 @@ nav a.active {
  align-items: center;
  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.09);
 }
-
 .mockup-desktop {
  width: 80%; 
  z-index: 1;
 }
-
 /* TEXT  */
 .projet-texte {
  flex: 1;
 }
-
 .projet-texte h3 {
  font-size: 30px;
  margin-bottom: 18px;
  font-weight: 700;
  }
-
 .projet-texte p {
  font-size: 19px;
  line-height: 1.6;
  margin-bottom: 15px;
  color: #444;
  }
-
 .projet-links {
  display: flex;
  gap: 10px;
  margin-top: 20px;
 }
-
 .btn, .btn-secondary {
  width: 140px;
  height: 50px;
@@ -316,7 +344,6 @@ nav a.active {
  text-decoration: none;
  transition: .2s;
 }
-
 .btn { background:  #07248b; color: #fff; }
 .btn:hover { background:  #07248b; }
 
@@ -330,7 +357,6 @@ nav a.active {
  height: 290px;
  }
 }
-
 @media (max-width: 900px) {
  .projet-container {
    flex-direction: column;
@@ -349,7 +375,6 @@ nav a.active {
  .mockup-tablette { right: 60px; }
  .mockup-mobile { left: 40px; }
 }
-
 @media (max-width: 600px) {
  .mockup-group {
    height: 240px;
@@ -373,6 +398,8 @@ nav a.active {
    font-size: 17px;
   }
 }
+
+
 
 
 .experience-section {
@@ -461,12 +488,6 @@ nav a.active {
   text-align: center;
 }
 
-#parcours h2 {
-  font-size: 2em;
-  margin-bottom: 60px;
-  color: #0d1b2a;
-}
-
 .parcours-container {
   display: flex;
   justify-content: space-between;
@@ -549,11 +570,6 @@ nav a.active {
     padding: 60px 8%;
   }
 
-  #parcours h2 {
-    font-size: 1.8em;
-    margin-bottom: 40px;
-  }
-
   .parcours-container {
     flex-direction: column;
     align-items: center;
@@ -572,9 +588,7 @@ nav a.active {
 }
 @media (max-width: 480px) {
 
-  #parcours h2 {
-    font-size: 1.6em;
-  }
+
 
   .parcours-item {
     padding: 25px;
@@ -649,11 +663,6 @@ nav a.active {
   filter: brightness(0) invert(1);
 }
 
-.logiciel h3 {
-  color: #002b33;
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
 
 .logiciel p {
   color: #555;
@@ -780,6 +789,9 @@ nav a.active {
   }
 }
 
+
+
+
 .veille-section {
   padding: 60px 8%;
 }
@@ -905,6 +917,63 @@ nav a.active {
 .impact-items p {
   color: #555;
 }
+
+/* ---------- SCHEMA VEILLE ---------- */
+
+.schema-veille-container {
+    text-align: center;
+    margin: 60px auto;
+}
+
+.schema-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #07248b; /* violet doux comme ton style */
+    margin-bottom: 25px;
+}
+
+/* BOX / CARTE */
+.schema-box {
+     background: #f5f6ff; 
+    padding: 35px 40px;
+    border-radius: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        0 4px 10px rgba(0, 0, 0, 0.05);
+    font-size: 18px;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* Style des lignes */
+.schema-box p {
+    margin: 8px 0;
+    font-weight: 400;
+}
+
+.schema-box strong {
+    color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .schema-box {
+        padding: 25px;
+        font-size: 16px;
+    }
+    .schema-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .schema-box {
+        font-size: 15px;
+    }
+}
+
 
 /* -------------------- RESPONSIVE -------------------- */
 
@@ -1446,9 +1515,8 @@ nav a.active {
 
 
 
-/* ======================= RESPONSIVE AJOUTÉE (corrigée) ======================= */
 
-/* GRID RÉALISATIONS → RESPONSIVE CORRECTE */
+/*RESPONSIVE  */
 
 @media (max-width: 1024px) {
   .projet2-container {
@@ -1521,7 +1589,7 @@ nav a.active {
 
 /* =====================================================================
 ================ RESPONSIVE GLOBALE AJOUTÉE (NOUVELLE PARTIE) ===========
-=========================================================================== */
+ */
 
 @media (max-width: 1440px) {
   section, .hero, #competences, #parcours, .contact {
@@ -1535,9 +1603,13 @@ nav a.active {
     padding-top: 130px;
     gap: 40px;
   }
+
+  /* IMAGE placement pour écrans moyens */
   .jav-image {
     width: 400px;
-    height: 420px;
+    height: 20px;
+    margin-top: -120px;
+    margin-left: 60px;
   }
 }
 
@@ -1545,7 +1617,7 @@ nav a.active {
 
   /* Harmonisation titres */
   h1, h2, .titre-section {
-    font-size: 90%;
+    font-size: 30px;
   }
 
   /* Parcours */
@@ -1556,6 +1628,14 @@ nav a.active {
   /* Réalisations */
   .mockup {
     width: 90%;
+  }
+
+  /* Image: recentrer + réduire décalage */
+  .jav-image {
+    width: 380px;
+    height: 380px;
+    margin-top: -60px;
+    margin-left: 20px;
   }
 }
 
@@ -1575,9 +1655,12 @@ nav a.active {
     font-size: 16px;
   }
 
+  /* IMAGE mobile large */
   .jav-image {
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
+    margin-top: -30px;
+    margin-left: 0;
   }
 
   /* Grands boutons */
@@ -1606,9 +1689,12 @@ nav a.active {
     font-size: 14px;
   }
 
+  /* IMAGE mobile moyen */
   .jav-image {
-    width: 170px;
-    height: 170px;
+    width: 300px;
+    height: 30px;
+    margin-top: 0;
+    margin-left: 0;
   }
 
   /* Sections */
@@ -1626,7 +1712,11 @@ nav a.active {
 @media (max-width: 430px) {
 
   .hero-text h2 {
-    font-size: 24px;
+    font-size: 30px;
+    line-height: 1.3;
+  }
+  .hero-text h3 {
+    font-size: 18px;
     line-height: 1.3;
   }
 
@@ -1634,9 +1724,12 @@ nav a.active {
     font-size: 13px;
   }
 
+  /* IMAGE mobile petit */
   .jav-image {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
+    margin-top: 0;
+    margin-left: 0;
   }
 
   .parcours-item, .competence-card {
@@ -1651,5 +1744,3 @@ nav a.active {
     font-size: 0.9rem;
   }
 }
-
-
