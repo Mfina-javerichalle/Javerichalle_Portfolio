@@ -786,9 +786,7 @@ nav a.active {
 }
 
 
-/* ============================
-   SECTION VEILLE TECHNOLOGIQUE
-   ============================ */
+/* SECTION VEILLE TECHNOLOGIQUE*/
 
 .veille-section {
   padding: 60px 8%;
@@ -817,9 +815,7 @@ nav a.active {
   line-height: 1.6;
 }
 
-/* =======================
-      BLOCS HISTORIQUES
-   ======================= */
+/* BLOCS HISTORIQUES */
 
 .bloc {
   background: #f5f6ff;
@@ -857,9 +853,7 @@ nav a.active {
   color: #333;
 }
 
-/* =======================
-        CARDS
-   ======================= */
+/* CARDS*/
 
 .cards {
   display: grid;
@@ -882,9 +876,7 @@ nav a.active {
   color: #1d1b52;
 }
 
-/* =======================
-       IMPACT SECTION
-   ======================= */
+/* IMPACT SECTION*/
 
 .impact {
   border: 2px solid #07248b;
@@ -920,9 +912,7 @@ nav a.active {
   color: #555;
 }
 
-/* =======================
-   SCHÉMA VEILLE
-   ======================= */
+/*SCHÉMA VEILLE*/
 
 .schema-veille-container {
   text-align: center;
@@ -959,9 +949,7 @@ nav a.active {
 }
 
 
-/* =======================
-   FICHES DE VEILLE
-   ======================= */
+/* FICHES DE VEILLE */
 
 .fiches-veille {
     background: #f5f6ff;
@@ -1032,9 +1020,7 @@ nav a.active {
 }
 
 
-/* =======================
-   DÉFINITION (NOUVEAU)
-   ======================= */
+/* DÉFINITION (NOUVEAU) */
 
 .definition-text {
   background: #ffffff;
@@ -1050,9 +1036,7 @@ nav a.active {
 }
 
 
-/* =======================
-   LANGAGES & FRAMEWORKS (NOUVEAU)
-   ======================= */
+/* LANGAGES & FRAMEWORKS (NOUVEAU) */
 
 .framework-list {
   margin-top: 20px;
@@ -1079,9 +1063,7 @@ nav a.active {
 }
 
 
-/* =======================
-   RESPONSIVE DESIGN
-   ======================= */
+/* RESPONSIVE DESIGN */
 
 /* TABLETTES */
 @media (max-width: 992px) {
@@ -1403,7 +1385,7 @@ nav a.active {
 
 
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 
 .footer {
     background:   #07248b;
@@ -1471,7 +1453,7 @@ nav a.active {
 
 .scroll-top-btn {
   position: fixed;
-  inset: auto 1rem 1rem auto; /* remplace bottom/right proprement */
+  inset: auto 1rem 1rem auto; 
   width: 60px;
   height: 60px;
   background-color: #07248b;
@@ -1484,7 +1466,7 @@ nav a.active {
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   transition: transform 0.2s, background-color 0.2s;
-  z-index: 9999; /* IMPORTANT */
+  z-index: 9999; 
 }
 
 .scroll-top-btn:hover {
@@ -1508,7 +1490,7 @@ nav a.active {
   }
 }
 
-/* ======================= SECTION RÉALISATIONS ======================= */
+/* SECTION RÉALISATIONS */
 
 .realisations_card,
 #realisations {
@@ -1683,9 +1665,7 @@ nav a.active {
 
 
 
-/* =====================================================================
-================ RESPONSIVE GLOBALE AJOUTÉE (NOUVELLE PARTIE) ===========
- */
+/* RESPONSIVE GLOBALE AJOUTÉE (NOUVELLE PARTIE) */
 
 @media (max-width: 1440px) {
   section, .hero, #competences, #parcours, .contact {
