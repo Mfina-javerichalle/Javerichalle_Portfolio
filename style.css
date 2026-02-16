@@ -322,6 +322,109 @@ nav a.active {
 
 
 
+
+/* ===== Section Formation ===== */
+.formation {
+  padding: 80px 10%;
+  background: white;
+}
+
+.formation-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Cartes */
+.formation-card {
+  background: #f8f9fc;
+  border-radius: 15px;
+  padding: 25px;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formation-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres */
+.formation-card h3 {
+  color: #07248b;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+/* Texte */
+.formation-card p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Listes */
+.formation-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.formation-card ul li {
+  color: #444;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 22px;
+}
+
+/* Icône check */
+.formation-card ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #07248b;
+  font-weight: bold;
+}
+
+/* Mise en avant SLAM */
+.formation-card.highlight {
+  border: 2px solid #07248b;
+  background: #eef2ff;
+}
+  
+.bts-orientation {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #07248b;
+  gap: 12px;
+}
+
+.bts-orientation .arrow {
+  font-size: 1.7rem;
+  animation: arrowMove 1.5s infinite ease-in-out;
+  transition: transform 0.3s ease; /* garde ton animation + responsive fluide */
+}
+
+
+/* DESKTOP : flèche vers la droite ➜ */
+@media (min-width: 769px) {
+  .bts-orientation .arrow {
+    transform: rotate(0deg);
+  }
+}
+
+/* MOBILE : flèche vers le bas ↓ */
+@media (max-width: 768px) {
+  .bts-orientation .arrow {
+    transform: rotate(90deg);
+  }
+}
+
+
+
 .realisations h2 {
   font-size: 2.5rem;
   color: #0d1b2a;
@@ -413,377 +516,595 @@ nav a.active {
     color: #0d1b2a;
 }
 
-/* CONTAINER */
-.experience-container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: 900px;
-    margin: auto;
-}
-
-/* CARD */
-.experience-card {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
-
-.experience-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-}
-
-.experience-card h3 {
-    font-size: 26px;
-    font-weight: 700;
-    color: #07248b;
-    margin-bottom: 5px;
-}
-
-.experience-date {
-    display: inline-block;
-    margin-bottom: 15px;
-    color: #555;
-    font-size: 15px;
-}
-
-.experience-card p {
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
-.experience-card ul {
-    margin-top: 10px;
-    padding-left: 20px;
-}
-
-.experience-card ul li {
-    margin-bottom: 8px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 600px) {
-    .titre-section {
-        font-size: 32px;
-    }
-
-    .experience-card {
-        padding: 20px;
-    }
-
-    .experience-card h3 {
-        font-size: 22px;
-    }
-}
 
 
-#parcours {
+
+/* ===============================
+   SECTION COMPÉTENCES
+================================ */
+
+#competences {
   padding: 80px 10%;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.parcours-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.parcours-item {
   background: white;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 40px;
-  flex: 1;
-  min-width: 300px;
-  max-width: 500px;
-  text-align: left;
+  min-height: 100vh; /* Garantit le scroll */
 }
 
-.parcours-item h3 {
-  color: #07248b;
-  margin-bottom: 10px;
-}
-
-.parcours-item p {
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.parcours-buttons {
-  margin-top: 20px;
-  display: flex;
-  gap: 20px;
-}
-
-.btn-parcours,
-.btn-parcours-secondary {
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: 0.3s ease;
-  font-weight: 600;
-  font-size: 0.95em;
-}
-
-.btn-parcours {
-   background: linear-gradient(90deg, #07248b, #2b2e32);
-  color: white;
-}
-
-.btn-parcours:hover {
-   background: linear-gradient(90deg, #274bcc, #2b2e32);
-}
-
-.btn-parcours-secondary {
-  border: 2px solid #002b33;
-  color: #002b33;
-  background: transparent;
-}
-
-.btn-parcours-secondary:hover {
-    background: linear-gradient(90deg, #07248b, #2b2e32);
-  color: white;
-}
-
-@media (max-width: 1024px) {
-  .parcours-container {
-    justify-content: center;
-    gap: 30px;
-  }
-
-  .parcours-item {
-    max-width: 600px;
-    text-align: left;
-  }
-}
-@media (max-width: 768px) {
-
-  #parcours {
-    padding: 60px 8%;
-  }
-
-  .parcours-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .parcours-item {
-    width: 100%;
-    max-width: 450px;
-    text-align: center;
-  }
-
-  .parcours-buttons {
-    justify-content: center;
-  }
-}
-@media (max-width: 480px) {
-
-
-
-  .parcours-item {
-    padding: 25px;
-  }
-
-  .parcours-item h3 {
-    font-size: 1.2em;
-  }
-
-  .parcours-item p {
-    font-size: 0.95em;
-  }
-
-  .btn-parcours,
-  .btn-parcours-secondary {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-
-
-/* SECTION LOGICIELS UTILISÉS */
-.logiciels-section {
-  padding: 80px 10%;
-  background: #f9fafc;
-  font-family: 'Poppins', sans-serif;
+/* ----- Titre de section ----- */
+#competences .titre-section {
   text-align: center;
+  color: #07248b;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
 }
 
-.section-subtitle {
-  color: #333;
-  font-size: 1rem;
-  margin-bottom: 50px;
-}
-
-.logiciels-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
-  justify-items: center;
-}
-
-.logiciel {
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 300px;
-}
-
-.logiciel:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.icon-circle {
-  background: #07248b;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+/* ----- Filtres ----- */
+#competences .filter-buttons {
   display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   justify-content: center;
-  align-items: center;
-  margin: 0 auto 15px auto;
+  margin-bottom: 40px;
 }
 
-.icon-circle img {
-  width: 40px;
-  height: 40px;
-  filter: brightness(0) invert(1);
+#competences .filter-btn {
+  padding: 8px 18px;
+  border: 2px solid #07248b;
+  background: transparent;
+  color: #07248b;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
 }
 
-
-.logiciel p {
-  color: #555;
-  font-size: 0.9rem;
-  line-height: 1.5;
+#competences .filter-btn:hover,
+#competences .filter-btn.active {
+  background: #07248b;
+  color: white;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .logiciels-section {
+/* ----- Grille des compétences ----- */
+#competences .competences-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* ----- Titres de catégories ----- */
+#competences .skills-title {
+  grid-column: 1 / -1;
+  margin: 50px 0 20px;
+  color: #07248b;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-left: 6px solid #07248b;
+  padding-left: 15px;
+}
+
+/* ----- Cartes Langages / Outils / BDD ----- */
+#competences .skill-card {
+  background: #f8f9fc;
+  border-radius: 16px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(7, 36, 139, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#competences .skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(7, 36, 139, 0.18);
+}
+
+#competences .skill-card img {
+  width: 50%;
+  max-width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+#competences .skill-card h4 {
+  color: #07248b;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+/* ----- Barre de progression ----- */
+#competences .progress {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#competences .progress span {
+  display: block;
+  height: 100%;
+  background: #07248b;
+  border-radius: 10px;
+}
+
+/* ----- Cartes texte (Soft skills & Pro) ----- */
+#competences .text-card {
+  padding: 18px;
+  background: #eef2ff;
+  border-left: 5px solid #07248b;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #07248b;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(7, 36, 139, 0.1);
+}
+
+/* ===============================
+   FILTRAGE (SCROLL SAFE)
+================================ */
+
+/* Ne pas utiliser display:none pour ne pas casser le layout */
+#competences .hide {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+/* Tablette (≤ 992px) */
+@media (max-width: 992px) {
+  #competences {
+    padding: 70px 6%;
+  }
+
+  #competences .titre-section {
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+  }
+
+  #competences .competences-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  #competences .skills-title {
+    font-size: 1.5rem;
+    margin: 40px 0 15px;
+  }
+
+  #competences .skill-card {
+    padding: 20px;
+  }
+
+  #competences .skill-card img {
+    max-width: 70px;
+  }
+}
+
+/* Mobile (≤ 576px) */
+@media (max-width: 576px) {
+  #competences {
     padding: 60px 5%;
   }
 
-  .logiciel {
-    max-width: 100%;
+  #competences .titre-section {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+
+  #competences .filter-buttons {
+    gap: 8px;
+  }
+
+  #competences .filter-btn {
+    padding: 6px 14px;
+    font-size: 0.9rem;
+  }
+
+  #competences .competences-container {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  #competences .skill-card {
+    padding: 18px;
+  }
+
+  #competences .skill-card img {
+    max-width: 60px;
+  }
+
+  #competences .skills-title {
+    font-size: 1.3rem;
+    margin: 35px 0 12px;
+  }
+
+  #competences .text-card {
+    padding: 16px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Très petits écrans (≤ 400px) */
+@media (max-width: 400px) {
+  #competences {
+    padding: 50px 4%;
+  }
+
+  #competences .filter-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #competences .filter-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  #competences .skills-title {
+    font-size: 1.2rem;
   }
 }
 
 
-/*SECTION COMPÉTENCES */
 
-#competences {
-  padding: 100px 10%;
-  background-color: #f9f9f9;
+
+
+
+
+.experience-section {
+  padding: 80px 10%;
+  background: #f9f9ff;
 }
 
-#competences .titre-page {
+.experience-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 15px 40px rgba(7, 36, 139, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.experience-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #07248b, #0b3ad0);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.experience-info h3 {
+  color: #07248b;
+  margin: 0 0 5px 0;
+  font-size: 1.3rem;
+}
+
+.experience-date {
+  color: #666;
+  font-weight: 600;
+}
+
+.experience-card p {
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.task-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  background: #f8f9fc;
+  border-radius: 10px;
+  border-left: 4px solid #07248b;
+}
+
+.task-icon {
+  font-size: 1.2rem;
+  width: 28px;
+  height: 28px;
+  background: #07248b;
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.task-item span {
+  color: #333;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 60px 5%;
+  }
+  
+  .experience-card {
+    padding: 25px;
+  }
+  
+  .experience-header {
+    gap: 15px;
+  }
+  
+  .experience-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .tasks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* SECTION GLOBALE */
+#parcours {
+  padding: 80px 10%;
+  background: #f9f9ff;
+  position: relative;
+}
+
+#parcours .titre-section {
   text-align: center;
-  font-size: 2.3em;
+  color: #07248b;
+  font-size: 2rem;
   font-weight: 700;
-  color: #0d1b2a;
-  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+/* CONTAINER TIMELINE */
+.timeline-container {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* LIGNE VERTICALE CENTRALE (DESKTOP / TABLETTE) */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: #07248b;
+  z-index: 1;
+}
+
+/* ITEM */
+.timeline-item {
+  position: relative;
+  width: 45%;
+  margin-bottom: 50px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* Alternance gauche / droite (DESKTOP) */
+.timeline-item.gauche {
+  left: 0;
+}
+
+.timeline-item.droite {
+  left: 55%;
+}
+
+/* CONTENU */
+.timeline-content h3 {
+  color: #07248b;
+  margin: 0 0 5px;
+}
+
+.timeline-year {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
   margin-bottom: 10px;
 }
 
-#competences .retour-btn {
-  display: block;
-  text-align: center;
-  margin-bottom: 60px;
-  text-decoration: none;
-  color: #07248b;
-  font-weight: 600;
-  transition: 0.3s ease;
-}
-
-#competences .retour-btn:hover {
-  color: #07248b;
-}
-
-/* Grille des compétences */
-.competences-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
-  margin-top: 40px;
-}
-
-/* Cartes */
-.competence-card {
-  background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  padding: 40px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.competence-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-}
-
-.competence-card h2 {
-  color: #07248b;
-  font-size: 1.4em;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.competence-card p {
+/* DESCRIPTION */
+.timeline-desc {
+  display: none;
+  margin-top: 10px;
   color: #333;
-  line-height: 1.6;
-  margin-bottom: 25px;
-  font-size: 1em;
+  font-size: 0.95rem;
 }
 
-/* Tags */
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.tags span {
-  background: #e8f0ff;
-  color: #07248b;
-  padding: 7px 15px;
-  border-radius: 20px;
-  font-size: 0.9em;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.tags span:hover {
+.toggle-desc {
+  margin-top: 10px;
+  padding: 6px 12px;
   background: #07248b;
-  color: white;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  #competences {
-    padding: 80px 6%;
+/* ICONES (DESKTOP) */
+.timeline-icon,
+.timeline-icon-2 {
+  width: 50px;
+  height: 50px;
+  background: #07248b;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  z-index: 2;
+  border: 3px solid #ffffff;
+}
+
+/* icône côté droit (items gauche) */
+.timeline-icon {
+  left: 111%;
+  transform: translateX(-50%);
+}
+
+/* icône côté gauche (items droite) */
+.timeline-icon-2 {
+  right: 111%;
+  transform: translateX(50%);
+}
+
+/* --------- BREAKPOINT 1 : GRANDES TABLETTES / PETITS ÉCRANS (<= 1024px) --------- */
+/* On réduit un peu la largeur, mais on garde encore l'alternance */
+@media (max-width: 1024px) {
+  .timeline-item {
+    width: 80%;
   }
 
-  .competences-grid {
-    gap: 25px;
+  .timeline-item.gauche {
+    left: 0;
   }
 
-  .competence-card {
-    padding: 30px;
+  .timeline-item.droite {
+    left: 20%;
   }
 
-  #competences .titre-page {
-    font-size: 1.9em;
+  .timeline-icon {
+    left: 100%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-icon-2 {
+    right: 100%;
+    transform: translateX(50%);
+  }
+}
+
+/* --------- BREAKPOINT 2 : MOBILE (<= 768px) --------- */
+/* Alignement en une seule colonne, ligne à gauche pour être plus lisible sur mobile */
+@media (max-width: 768px) {
+
+  #parcours {
+    padding: 60px 5%;
+  }
+
+  #parcours .titre-section {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+  }
+
+  /* La ligne passe sur la gauche */
+  .timeline-container::before {
+    left: 20px;
+    transform: none;
+  }
+
+  .timeline-item,
+  .timeline-item.gauche,
+  .timeline-item.droite {
+    width: 100%;
+    left: 0;
+    margin-left: 40px; /* pour laisser la place à la ligne + icône */
+  }
+
+  /* Icônes centrées sur la ligne à gauche */
+  .timeline-icon,
+  .timeline-icon-2 {
+    left: 20px;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  .timeline-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .timeline-year {
+    font-size: 0.85rem;
+  }
+
+  .timeline-desc {
+    font-size: 0.9rem;
+  }
+
+  .toggle-desc {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+}
+
+/* --------- BREAKPOINT 3 : TRES PETITS ÉCRANS (<= 480px) --------- */
+/* Ajustements fins : padding, tailles de police, ombres plus légères */
+@media (max-width: 480px) {
+
+  #parcours {
+    padding: 40px 4%;
+  }
+
+  .timeline-item {
+    padding: 15px;
+    margin-bottom: 35px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+  }
+
+  .timeline-icon,
+  .timeline-icon-2 {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1rem;
+  }
+
+  .timeline-year {
+    font-size: 0.8rem;
+  }
+
+  .timeline-desc {
+    font-size: 0.85rem;
   }
 }
 
@@ -1492,78 +1813,7 @@ nav a.active {
   }
 }
 
-/* SECTION RÉALISATIONS */
 
-.realisations_card,
-#realisations {
-  width: 100%;
-  padding: 60px 0;
-}
-
-.titre-section {
-  font-size: 2.2rem;
-  text-align: center;
-  margin-bottom: 40px;
-  color: #07248b;
-  font-weight: 700;
-}
-
-/* Container des 3 cartes */
-.projet2-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
-  max-width: 1100px;
-  margin: 0 auto 40px auto;
-  padding: 0 20px;
-}
-
-/* Carte individuelle */
-.projet_card {
-  padding: 25px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  text-align: center;
-  transition: 0.3s ease;
-}
-
-.projet_card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-}
-
-/* Titres */
-.projet-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #07248b;
-  margin-bottom: 10px;
-}
-
-/* Texte */
-.projet_card p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #444;
-}
-
- .bouton_rea {
-  display: inline-block;
-  padding: 12px 28px;
-  margin-top: 30px;
-  margin-left: 500px;
-  background: linear-gradient(90deg, #07248b, #2b2e32);
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: 600;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.25);
-}
 
 .bouton_veille{
   display: inline-block;

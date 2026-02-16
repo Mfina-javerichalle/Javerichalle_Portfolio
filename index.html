@@ -27,9 +27,9 @@
      <nav id="nav-menu">
        <ul>
          <li><a href="#profil">Profil</a></li>
+         <li><a href="#parcours">parcours</a></li>
          <li><a href="#realisations">Réalisations</a></li>
          <li><a href="#experiences_professionnelles">Experiences</a></li>
-         <li><a href="#parcours">parcours</a></li>
          <li><a href="#veille-tech">Veille</a></li>
          <li><a href="#contact">Contact</a></li>
        </ul>
@@ -47,18 +47,18 @@
         <h2 data-aos="zoom-in-right" data-aos-delay="200"> Javerichalle Maconslavie</h2>
         <i><h3 data-aos="zoom-in-left" data-aos-delay="200">BTS-SIO, Option SLAM</h3></i>
         <p data-aos="fade-right" data-aos-delay="1500">
-          Je suis étudiante en deuxième année de BTS SIO à SCHOLIA, <br> 
-          spécialisée dans le développement web et mobile. Durant<br> 
-          ma formation, j’ai réalisé trois à quatres sites web complet ainsi  que des <br>           
-          petites applications, en utilisant notamment HTML, CSS, <br>  
-          Boostrap JavaScript, PHP, MySQL et Python.<br>
-          J’aime concevoir des sites modernes, fonctionnels <br>
-          et responsives, avec une structure claire et optimisée. <br>
+         Je suis étudiante en deuxième année de BTS SIO à SCHOLIA, spécialisée  <br> dans le développement web et mobile.
+J’aime concevoir des sites <br> modernes, fonctionnels  et responsives, avec une structure claire et optimisée.
         </p>
-        <div class="cv-buttons">
-          <a href="CV_Mfina_Dev.pdf" target="_blank" class="btn-cv">Voir mon CV</a>
-          <a href="CV_Mfina_Dev.pdf" download class="btn-cv">Télécharger CV</a>
-       </div>
+       <div class="cv-buttons">
+  <a href="CV_Mfina_Dev.pdf" 
+     download="CV_Mfina_Dev.pdf" 
+     class="btn-cv"
+     title="Télécharger ou voir mon CV">
+     Mon CV
+  </a>
+</div>
+
 
 
         <div class="liens_icones">
@@ -74,133 +74,452 @@
   </section>
 
 
-  <section id="parcours" data-aos="fade-up" data-aos-delay="200">
-  <h2 class="titre-section"  data-aos="fade-right" data-aos-delay="1000">Mon Parcours</h2>
+<section id="parcours" data-aos="fade-up">
+  <h2 class="titre-section">Mon Parcours</h2>
 
-  <div class="parcours-container">
-    <!-- Bloc Baccalauréat -->
-    <div class="parcours-item gauche" data-aos="fade-right" data-aos-delay="300">
-      <h3>Baccalauréat Scientifique D</h3>
-      <p>2022 – 2023 | Lycée J.B. Taty Loutard</p>
-      <p>
-        Formation scientifique générale avec spécialisation en mathématiques et sciences physiques.  
-        Développement de la rigueur, de la logique et de la curiosité scientifique.
-      </p>
+  <div class="timeline-container">
+
+    <!-- 1. BAC (GAUCHE) -->
+    <div class="timeline-item gauche">
+      <div class="timeline-content">
+        <h3>Baccalauréat Scientifique D</h3>
+        <span class="timeline-year">JEAN BAPTISTE TATY LOUTARD</span>
+        <span class="timeline-year">CONGO</span>
+        <span class="timeline-year">2022 – 2023</span>
+        <p class="timeline-desc">
+          Formation scientifique générale avec spécialisation en mathématiques et sciences physiques.
+        </p>
+        <button class="toggle-desc">Voir la description</button>
+      </div>
+      <div class="timeline-icon">🎓</div>
     </div>
 
-    <!-- Bloc BTS -->
-    <div class="parcours-item droite" data-aos="fade-left" data-aos-delay="400">
-      <h3>BTS SIO – Option SLAM</h3>
-      <p>2024 – 2026 | École SCHOLIA</p>
-      <p>
-        Spécialisation en développement web et mobile.  
-        Formation axée sur la programmation, les bases de données, et la gestion de projets informatiques.
-      </p>
-
-      <div class="parcours-buttons">
-        <a href="outils.html" class="btn-parcours">Outils utilisés</a>
-        <a href="competences.html" class="btn-parcours-secondary">Compétences acquises</a>
+    <!-- 2. INFOGRAPHIE (DROITE) -->
+    <div class="timeline-item droite">
+            <div class="timeline-icon-2">🎨</div>
+      <div class="timeline-content">
+        <h3>Formation Infographie</h3>
+        <span class="timeline-year">BIG JUDGE COMMUNICATION</span>
+        <span class="timeline-year">CONGO</span>
+        <span class="timeline-year">Février – Juin 2024</span>
+        <p class="timeline-desc">
+          Formation en conception graphique, design et outils créatifs (Photoshop, Illustrator).
+        </p>
+        <button class="toggle-desc">Voir la description</button>
       </div>
     </div>
+
+    <!-- 3. BTS (GAUCHE) -->
+    <div class="timeline-item gauche">
+      <div class="timeline-content">
+        <h3>BTS SIO – Option SLAM</h3>
+        <span class="timeline-year">SCHOLIA</span>
+        <span class="timeline-year">FRANCE</span>
+        <span class="timeline-year">2024 – 2026</span>
+        <p class="timeline-desc">
+          Spécialisation en développement web et mobile.
+        </p>
+        <button class="toggle-desc">Voir la description</button>
+      </div>
+      <div class="timeline-icon">💻</div>
+    </div>
+
   </div>
 </section>
+
+
+
+
+<section id="formation" class="formation">
+  <h2 class="titre-section" data-aos="fade-right">Formation</h2>
+
+  <div class="formation-container">
+
+    <div class="formation-card" data-aos="fade-up">
+      <h3>🎓 BTS SIO</h3>
+      <p>
+        Le <strong>BTS Services Informatiques aux Organisations</strong> est une
+        formation Bac+2 orientée vers les métiers de l’informatique.
+        Elle prépare à une insertion professionnelle rapide ou à une poursuite
+        d’études dans le numérique.
+     </p>
+
+     <div class="bts-orientation">
+       <span>Orienté vers deux options de spécialisation</span>
+       <span class="arrow">➜</span>
+     </div>
+
+    </div>
+
+    <div class="formation-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>🖧 Option SISR</h3>
+      <p>
+        L’option <strong>SISR</strong> forme des spécialistes des infrastructures
+        informatiques. Elle est axée sur l’administration des systèmes,
+        la gestion des réseaux, la sécurité et la maintenance.
+      </p>
+      <ul>
+        <li>Administration systèmes et réseaux</li>
+        <li>Sécurité informatique</li>
+        <li>Support et maintenance</li>
+      </ul>
+    </div>
+
+    <div class="formation-card highlight" data-aos="fade-up" data-aos-delay="400">
+      <h3>💻 Option SLAM</h3>
+      <p>
+        L’option <strong>SLAM</strong> est orientée vers le développement
+        d’applications et de solutions logicielles métiers.
+        Elle couvre l’analyse des besoins, la programmation et la gestion
+        des bases de données.
+      </p>
+      <ul>
+        <li>Développement web et applicatif</li>
+        <li>Analyse et conception logicielle</li>
+        <li>Maintenance des applications</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- ==================== RÉALISATIONS ==================== -->
-<section id="realisations" class="realisations_card">
+<section class="realisations" id="realisation">
+   <h2 data-aos="fade-right" data-aos-delay="1000">Réalisations</h2>
+ 
+    <!--2 — Texte gauche / Photos droite-->
+    <div class="projet-section">
+    <div class="projet-container reverse">
 
-  <h2  class="titre-section" data-aos="fade-right" data-aos-delay="1000">Mes Réalisations</h2><br><br>
+        <div class="mockup" data-aos="fade-left" data-aos-delay="300">
+            <img src="CINE.png" class="mockup-desktop" alt="">
+        </div>
 
-  <div class="projet2-container">
+        <div class="projet-texte" data-aos="fade-right" data-aos-delay="300">
+            <h3>Site de Cinéma AGS_CINE</h3>
+            <p><strong>Technologies :</strong> PHP, MySQL, HTML, CSS, Boostrap, JavaScript</p>
+            <p>Développement d’une plateforme permettant de gérer les films, les salles, les séances et l’affichage dynamique du cinéma AGS_CINE.</p>
 
-      <div class="projet_card" data-aos="flip-left" data-aos-delay="200">
-        <h3 class="projet-title">Site de Cinéma AGS_CINE</h3>
-        <p>Plateforme de gestion de cinéma (films, salles, séances) avec affichage dynamique.</p>
+            <div class="projet-links">
+                <a href="http://localhost/CINE-AGS/index.php" target="_blank" class="btn">Voir le site</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!--  1 — Photos gauche / Texte droite -->
+    <div class="projet-section">
+        <div class="projet-container">
+
+            <div class="mockup" data-aos="fade-right" data-aos-delay="300">
+                <img src="jaellehair_mockup_ultralight.jpg" class="mockup-desktop" alt="">
+            </div>
+
+            <div class="projet-texte"data-aos="fade-left" data-aos-delay="300">
+                <h3>Site Jaëlle Hair</h3>
+                <p><strong>Technologies :</strong> HTML, CSS, JavaScript, PHP</p>
+                <p>
+                    Création du site vitrine professionnel pour mon salon <strong>Jaëlle Hair</strong>.
+                    Prestations, tarifs, galerie, contact. Projet complet réalisé de A à Z.
+                </p>
+                <div class="projet-links">
+                    <a href="https://jaelle-hair.fr" class="btn" target="_blank">Voir le site</a>
+                    <a href="https://github.com/mfinaJaverichalle" class="btn" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+        </div>
       </div>
 
+   <!-- 2 — Texte gauche / Photos droite -->
+<div class="projet-section">
+    <div class="projet-container reverse">
 
-    <!-- 1 — Jaëlle Hair -->
-    <div class="projet_card" data-aos="flip-left" data-aos-delay="200">
-      <h3 class="projet-title">Site Jaëlle Hair</h3>
-      <p>Site vitrine professionnel présentant les prestations, les tarifs, une galerie de réalisations et un formulaire de contact pour faciliter la prise de rendez-vous.</p>
-    </div>
+        <div class="mockup" data-aos="fade-left" data-aos-delay="300">
+            <img src="mockup_voyage.png" class="mockup-desktop" alt="Mockup du site DreamTrip">
+        </div>
 
-    <div class="projet_card" data-aos="flip-left" data-aos-delay="400">
-       <h3 class="projet-title">Plateforme de Voyage – DreamTrip</h3>
-       <p>Site de voyage moderne avec destinations, offres touristiques et réservations.</p>
-    </div>
+        <div class="projet-texte" data-aos="fade-right" data-aos-delay="300">
+            <h3>Plateforme de Voyage – DreamTrip</h3>
 
-    <!-- 3 — Business Privé -->
-    <div class="projet_card" data-aos="flip-left" data-aos-delay="400">
-      <h3 class="projet-title">Site Vitrine Business-Privé</h3>
-      <p>Site vitrine responsive développé pour une entreprise privée.</p>
-    </div>
-
-  </div>
-    <a href="realisations.html" class="bouton_rea">Voir mes réalisations</a>
-
-</section>
-
-
- <section id="experiences_professionnelles" class="experience-section">
-    <h2 class="titre-section"  data-aos="fade-right" data-aos-delay="1000">Expériences Professionnelles</h2>
-
-    <div class="experience-container">
-
-        <!-- EXPERIENCE 1 -->
-        <div class="experience-card" data-aos="fade-left" data-aos-delay="300">
-          <h3>Stagiaire Développement Web – Business Privé</h3>
-          <span class="experience-date">2025</span>
-
-         <p>
-            Stage réalisé en <strong>travail d’équipe</strong> dans le cadre du développement du site
-            Business Privé. Taches réalisées: <strong>architecture</strong>, <strong>arborescence</strong>,
-           <strong>organisation des contenus</strong> et <strong>structuration fonctionnelle</strong>.  
-         </p>
-
-         <ul>
-           <li>Analyse des besoins et définition de la structure du site</li>
-           <li>Création de l’arborescence complète</li>
-           <li>Organisation des pages, des sections et des fonctionnalités</li>
-           <li>Préparation d’une base solide pour l’équipe design</li>
-           <li>Travail collaboratif et suivi de l’avancement projet</li>
-         </ul>
-       </div>
-
-
-        <!-- EXPERIENCE 2 -->
-        <div class="experience-card" data-aos="fade-right" data-aos-delay="400">
-            <h3>Stagiaire Développement Web – AGS-IT </h3>
-            <span class="experience-date">2025 (en cours)</span>
+            <p><strong>Technologies :</strong> HTML, CSS, JavaScript, PHP</p>
 
             <p>
-                Développement d’un <strong>site de cinéma</strong> dans le cadre du stage.  
-                Projet en cours : création complète du site, interface utilisateur,  
-                fonctionnalités dynamiques et gestion des données.
+                Conception et développement d’un site web de voyage moderne permettant aux utilisateurs
+                de découvrir des destinations, consulter des offres touristiques et effectuer des réservations
+                en ligne. Le site propose une interface immersive, responsive et orientée expérience utilisateur.
             </p>
 
-            <ul>
-                <li>Création de pages dynamiques (PHP / MySQL)</li>
-                <li>Développement d’un design moderne et responsive (HTML/ Boostrap CSS/ JavaScript)</li>
-                <li>Travail sur la structure du site et les fonctionnalités cinéma</li>
-                <li>Projet en cours…</li>
-            </ul>
+            <div class="projet-links">
+                <a href="https://mfina-javerichalle.github.io/dream_trip/" target="_blank" class="btn">Voir le site</a>
+                <a href="https://github.com/Mfina-javerichalle/dream_trip.git" target="_blank" class="btn">Voir GitHub</a>
+            </div>
         </div>
 
     </div>
- </section>
+</div>
+
+
+    <!-- 3 — Photos gauche / Texte droite  -->
+    <div class="projet-section">
+        <div class="projet-container">
+
+            <div class="mockup"  data-aos="fade-right" data-aos-delay="300">
+                <img src="businessprive_mockup_ultralight (1).jpg" class="mockup-desktop" alt="">
+              
+            </div>
+
+            <div class="projet-texte" data-aos="fade-left" data-aos-delay="300">
+             <h3>Site Vitrine Business-Privé</h3>
+             <p><strong>Technologies :</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+             <p>Développement complet d’un site vitrine responsive pour une entreprise privée.</p>
+             <div class="projet-links">
+              <a href="https://business-prive.com/" target="_blank" class="btn">Voir le site</a>
+             </div>
+            </div>
+
+        </div>
+      </div>
+
+    </section> 
+
+<section id="competences" class="competences">
+  <h2 class="titre-section">Compétences</h2>
+
+  <!-- Filtres -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">Toutes</button>
+    <button class="filter-btn" data-filter="langages">Langages</button>
+    <button class="filter-btn" data-filter="bdd">Bases de données</button>
+    <button class="filter-btn" data-filter="pro">Compétences pro</button>
+    <button class="filter-btn" data-filter="soft">Soft skills</button>
+    <button class="filter-btn" data-filter="outils">Logiciels utilisés</button>
+  </div>
+
+  <div class="competences-container">
+
+    <!-- ===== LANGAGES ===== -->
+    <h3 class="skills-title langages">Langages de programmation</h3>
+
+    <div class="skill-card langages">
+      <img src="html.png" alt="HTML">
+      <h4>HTML</h4>
+      <div class="progress"><span style="width: 90%"></span></div>
+    </div>
+
+    <div class="skill-card langages">
+      <img src="css.png" alt="CSS">
+      <h4>CSS</h4>
+      <div class="progress"><span style="width: 70%"></span></div>
+    </div>
+
+    <div class="skill-card langages">
+      <img src="js.png" alt="JavaScript">
+      <h4>JavaScript</h4>
+      <div class="progress"><span style="width: 55%"></span></div>
+    </div>
+
+    <div class="skill-card langages">
+      <img src="php.png" alt="PHP">
+      <h4>PHP</h4>
+      <div class="progress"><span style="width: 60%"></span></div>
+    </div>
+
+    <div class="skill-card langages">
+      <img src="python.png" alt="Python">
+      <h4>Python</h4>
+      <div class="progress"><span style="width: 40%"></span></div>
+    </div>
+
+    <div class="skill-card langages">
+      <img src="java.png" alt="Java">
+      <h4>Java</h4>
+      <div class="progress"><span style="width: 50%"></span></div>
+    </div>
+
+    <div class="skill-card langages">
+      <img src="bootstrap.png" alt="Bootstrap">
+      <h4>Bootstrap</h4>
+      <div class="progress"><span style="width: 80%"></span></div>
+    </div>
+
+    <div class="skill-card langages">
+      <img src="aos.png" alt="AOS JS">
+      <h4>AOS JS</h4>
+      <div class="progress"><span style="width: 97%"></span></div>
+    </div>
+
+    <!-- ===== BASES DE DONNÉES ===== -->
+    <h3 class="skills-title bdd">Gestion de bases de données</h3>
+
+    <div class="skill-card bdd">
+      <img src="mysql.png" alt="MySQL">
+      <h4>MySQL / SQL</h4>
+      <div class="progress"><span style="width: 75%"></span></div>
+    </div>
+
+    <!-- ===== COMPÉTENCES PROFESSIONNELLES ===== -->
+    <h3 class="skills-title pro">Compétences professionnelles</h3>
+
+    <div class="text-card pro">Analyse des besoins</div>
+    <div class="text-card pro">Développement d’applications</div>
+    <div class="text-card pro">Maintenance applicative</div>
+    <div class="text-card pro">Gestion de projet</div>
+
+    <!-- ===== SOFT SKILLS ===== -->
+    <h3 class="skills-title soft">Soft skills</h3>
+
+    <div class="text-card soft">Travail en équipe</div>
+    <div class="text-card soft">Autonomie</div>
+    <div class="text-card soft">Organisation</div>
+    <div class="text-card soft">Adaptabilité</div>
+
+    <!-- ===== LOGICIELS ===== -->
+    <h3 class="skills-title outils">Logiciels utilisés</h3>
+
+    <div class="skill-card outils">
+      <img src="vscode.png" alt="VS Code">
+      <h4>Visual Studio Code</h4>
+      <div class="progress"><span style="width: 90%"></span></div>
+    </div>
+
+    <div class="skill-card outils">
+      <img src="xampp.png" alt="XAMPP">
+      <h4>XAMPP</h4>
+      <div class="progress"><span style="width: 80%"></span></div>
+    </div>
+
+    <div class="skill-card outils">
+      <img src="github.png" alt="GitHub & Bitbucket">
+      <h4>GitHub / Bitbucket</h4>
+      <div class="progress"><span style="width: 75%"></span></div>
+    </div>
+
+    <div class="skill-card outils">
+      <img src="eclipse.png" alt="Eclipse">
+      <h4>Eclipse</h4>
+      <div class="progress"><span style="width: 65%"></span></div>
+    </div>
+
+    <div class="skill-card outils">
+      <img src="anaconda.png" alt="Anaconda">
+      <h4>Anaconda</h4>
+      <div class="progress"><span style="width: 60%"></span></div>
+    </div>
+
+    <div class="skill-card outils">
+      <img src="lucidchart.png" alt="Lucidchart">
+      <h4>Lucidchart</h4>
+      <div class="progress"><span style="width: 70%"></span></div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<section id="experiences_professionnelles" class="experience-section">
+  <h2 class="titre-section">Expériences Professionnelles</h2>
+
+  <div class="experience-container">
+
+    <!-- EXPERIENCE 1 - ARCHITECTURE WEB -->
+    <div class="experience-card">
+      <div class="experience-header">
+        <div class="experience-icon">🏗️</div>
+        <div class="experience-info">
+          <h3>STAGE: Conceptrice d'Architecture Web</h3>
+          <span class="experience-date">mars-avril 2025</span>
+        </div>
+      </div>
+
+      <p>
+        J'ai conçu et structuré l'<strong>architecture technique complète</strong> du site web, 
+        définissant précisément la disposition des sections, la hiérarchie des pages et 
+        l'organisation des éléments d'interface. Mon travail a permis de créer une base 
+        solide et cohérente pour l'ensemble du projet.
+      </p>
+
+      <div class="tasks-grid">
+        <div class="task-item">
+          <span class="task-icon">📋</span>
+          <span>Définition précise du positionnement et de la hiérarchie visuelle</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon">🧩</span>
+          <span>Planification des sections, blocs et modules fonctionnels</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon">📄</span>
+          <span>Documentation détaillée des spécifications d'architecture</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE 2 - PROJET CINÉMA -->
+    <div class="experience-card">
+      <div class="experience-header">
+        <div class="experience-icon">🎬</div>
+        <div class="experience-info">
+          <h3>Développeuse Web Fullstack – Projet Cinéma</h3>
+          <span class="experience-date">Octobre-Novembre 2025</span>
+        </div>
+      </div>
+
+      <p>
+        Développement complet d'un <strong>site de cinéma moderne</strong> avec 
+        interface utilisateur fluide, fonctionnalités dynamiques et gestion de données.
+      </p>
+
+      <div class="tasks-grid">
+        <div class="task-item">
+          <span class="task-icon">👥</span>
+          <span>Interfaces utilisateur (catalogue films, planning, réservations)</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon">⚙️</span>
+          <span>Espace administrateur (gestion films, utilisateurs)</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon">🔍</span>
+          <span>Pages dynamiques (recherche, filtres, détails film)</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon">📱</span>
+          <span>Structure responsive multi-écrans</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon">🔗</span>
+          <span>Intégration front-end/back-end</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon">✅</span>
+          <span>Test et optimisation des fonctionnalités</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 
 
   
 
 <section id="veille-tech" class="veille-section">
 
-    <h2 class="titre-section" data-aos="fade-up">Veille Technologique</h2>
+    <h2 class="titre-section">Veille Technologique</h2>
 
-    <h3 class="sous-titre" data-aos="fade-up" data-aos-delay="100">
+    <h3 class="sous-titre">
         Applications Desktop : Évolution, Technologies et Tendances Actuelles
     </h3>
 
-    <p class="intro" data-aos="fade-up" data-aos-delay="200">
+    <p class="intro">
         Ma veille porte sur l’évolution des applications desktop, un domaine essentiel pour
         la création de logiciels performants, stables et adaptés à une utilisation locale.
         Malgré la montée du web et du mobile, les applications desktop restent indispensables
@@ -208,7 +527,7 @@
     </p>
 
     <!-- BOUTON VERS LA PAGE COMPLETE -->
-    <div class="btn-veille-container" data-aos="fade-up" data-aos-delay="300">
+    <div class="btn-veille-container">
         <a href="veille.html" class="bouton_veille">Voir la veille complète →</a>
     </div>
 
@@ -242,9 +561,9 @@
      </div>
 
      <div class="info-box">
-       <h3>Numéro de téléphone</h3>
+       <h3>Linkedin</h3>
        <p>
-         <a href="tel:+33755837001">+33 7 55 83 70 01</a>
+         <a href="https://www.linkedin.com/in/javerichalle-mfina-ba4747371/">linkedin.com/in/javerichalle-mfina</a>
        </p>
      </div>
     </div>
@@ -340,6 +659,81 @@
       });
      });
   </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const buttons = document.querySelectorAll("#competences .filter-btn");
+  const items = document.querySelectorAll(
+    "#competences .skill-card, #competences .text-card"
+  );
+  const titles = document.querySelectorAll("#competences .skills-title");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+
+      /* ----- Bouton actif ----- */
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const filter = button.dataset.filter;
+
+      /* ----- Filtrage des cartes ----- */
+      items.forEach(item => {
+        if (filter === "all" || item.classList.contains(filter)) {
+          item.classList.remove("hide");
+        } else {
+          item.classList.add("hide");
+        }
+      });
+
+      /* ----- Gestion intelligente des titres ----- */
+      titles.forEach(title => {
+
+        const category = title.dataset.category;
+        const relatedItems = Array.from(items).filter(item =>
+          item.classList.contains(category)
+        );
+
+        const hasVisibleItem = relatedItems.some(
+          item => !item.classList.contains("hide")
+        );
+
+        if (filter === "all" || hasVisibleItem) {
+          title.classList.remove("hide");
+        } else {
+          title.classList.add("hide");
+        }
+      });
+
+    });
+  });
+
+});
+</script>
+
+
+
+
+
+<script>
+document.querySelectorAll("#parcours .toggle-desc").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const desc = btn.previousElementSibling;
+    if (desc.style.display === "block") {
+      desc.style.display = "none";
+      btn.textContent = "Voir la description";
+    } else {
+      desc.style.display = "block";
+      btn.textContent = "Cacher la description";
+    }
+  });
+});
+</script>
+
+
+
+
 
 </body>
 </html>
