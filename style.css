@@ -423,17 +423,22 @@ nav a.active {
 /* SECTION FORMATION */
 /* =============================== */
 .formation {
-  padding: 100px 8%;
+  padding: 100px 10%;
   background: white;
 }
 
+/* CONTAINER CENTRÉ */
 .formation-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
   gap: 30px;
-  margin-top: 50px;
+
+  justify-content: center;      /* centre les cartes */
+  max-width: 1200px;            /* limite largeur */
+  margin: 50px auto 0 auto;     /* centre le bloc */
 }
 
+/* CARDS */
 .formation-card {
   background: #f8f9fc;
   border-radius: 15px;
@@ -444,7 +449,7 @@ nav a.active {
 
 .formation-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .formation-card h3 {
@@ -481,7 +486,7 @@ nav a.active {
   font-weight: bold;
 }
 
-/* Carte SLAM mise en avant */
+/* Carte mise en avant */
 .formation-card.highlight {
   border: 2px solid #07248b;
   background: #eef2ff;
@@ -508,126 +513,6 @@ nav a.active {
 @keyframes arrowMove {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(10px); }
-}
-
-/* =============================== */
-/* Responsive Formation */
-/* =============================== */
-@media (max-width: 992px) {
-  .formation {
-    padding: 80px 6%;
-  }
-
-  .formation-card {
-    padding: 20px;
-  }
-
-  .bts-orientation {
-    font-size: 1.1rem;
-    gap: 10px;
-  }
-
-  .bts-orientation .arrow {
-    font-size: 1.6rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .formation {
-    padding: 60px 4%;
-  }
-
-  .formation-card {
-    padding: 15px;
-  }
-
-  .bts-orientation {
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 1rem;
-  }
-
-  .bts-orientation .arrow {
-    font-size: 1.4rem;
-  }
-}
-
-
-@keyframes arrowMove {
-  0% { transform: translateX(0); }
-  50% { transform: translateX(6px); }
-  100% { transform: translateX(0); }
-}
-
-/* Formation responsive */
-@media (max-width: 480px) {
-  .formation {
-    padding: 70px 6%;
-  }
-
-  .formation-card {
-    padding: 20px;
-  }
-
-  .formation-card h3 {
-    font-size: 1.1rem;
-  }
-
-  .formation-card p,
-  .formation-card ul li {
-    font-size: 0.9rem;
-  }
-
-  .bts-orientation {
-    font-size: 1rem;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .bts-orientation .arrow {
-    transform: rotate(90deg);
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .formation {
-    padding: 80px 7%;
-  }
-
-  .formation-card {
-    padding: 25px;
-  }
-
-  .bts-orientation {
-    font-size: 1.1rem;
-  }
-
-  .bts-orientation .arrow {
-    transform: rotate(90deg);
-  }
-}
-
-@media (min-width: 1600px) {
-  .formation {
-    padding: 120px 12%;
-  }
-
-  .formation-container {
-    gap: 40px;
-  }
-
-  .formation-card {
-    padding: 35px;
-  }
-
-  .formation-card h3 {
-    font-size: 1.6rem;
-  }
-
-  .formation-card p,
-  .formation-card ul li {
-    font-size: 1.05rem;
-  }
 }
 
 
@@ -2135,9 +2020,11 @@ nav a.active {
     padding-top: 150px;
   }
 
-  .hero-text h2 {
-    font-size: 32px;
-  }
+.hero-text h2 {
+  font-size: 32px;
+  margin-left: 0px;   /* ajuste la distance depuis la gauche */
+  text-align: left;    /* empêche le centrage */
+}
 
   .hero-text p {
     font-size: 16px;
@@ -2193,9 +2080,18 @@ nav a.active {
   }
 }
 
+
+
+/* MOBILE */
 @media (max-width: 480px) {
+
   .formation {
-    padding: 70px 6%;
+    padding: 70px 8%;
+  }
+
+  .formation-container {
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 
   .formation-card {
@@ -2220,11 +2116,19 @@ nav a.active {
   .bts-orientation .arrow {
     transform: rotate(90deg);
   }
+
 }
 
+/* TABLETTE */
 @media (min-width: 481px) and (max-width: 768px) {
+
   .formation {
-    padding: 80px 7%;
+    padding: 80px 9%;
+  }
+
+  .formation-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    justify-content: center;
   }
 
   .formation-card {
@@ -2238,14 +2142,18 @@ nav a.active {
   .bts-orientation .arrow {
     transform: rotate(90deg);
   }
+
 }
 
+/* GRAND ÉCRAN */
 @media (min-width: 1600px) {
+
   .formation {
-    padding: 120px 12%;
+    padding: 120px 14%;
   }
 
   .formation-container {
+    max-width: 1400px;
     gap: 40px;
   }
 
@@ -2261,6 +2169,7 @@ nav a.active {
   .formation-card ul li {
     font-size: 1.05rem;
   }
+
 }
 
 @media (max-width: 1024px) {
@@ -2289,6 +2198,9 @@ nav a.active {
 
   .projet-texte p {
     font-size: 16px;
+  }
+  .projet-links a{
+    width: 150px;
   }
 }
 
@@ -2504,29 +2416,30 @@ nav a.active {
 
 
   .timeline-container::before {
-    left: 25px;
+    left: 2px;
     transform: none;
   }
 
   .timeline-item,
   .timeline-item.gauche,
   .timeline-item.droite {
-    width: 70%;
+    width: 100%;
     left: 0;
-    margin-left: 50px;
+    margin-left: 35px;
+    
   }
 
   .timeline-icon,
   .timeline-icon-2 {
     left: 25px;
     right: auto;
-    transform: translateX(-150%);
+    transform: translateX(-170%);
     width: 45px;
     height: 45px;
-    line-height: 45px;
-    font-size: 1.2rem;
   }
 }
+
+
 
 @media (max-width: 480px) {
   #parcours {
@@ -2729,35 +2642,6 @@ nav a.active {
   }
 }
 
-@media (max-width: 768px) {
-  .projet2-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .bouton_veille {
-    margin-left: 0;
-    display: block;
-    text-align: center;
-    width: 80%;
-    margin: 20px auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .projet2-container {
-    grid-template-columns: 1fr;
-  }
-
-  .titre-section {
-    font-size: 1.6rem;
-  }
-
-  .bouton_veille {
-    width: 90%;
-  }
-}
-
 @media (max-width: 1440px) {
   section,
   .hero,
@@ -2789,20 +2673,20 @@ nav a.active {
     padding-right: 4%;
   }
 }
-
-
-/* ===================== */
-/* MODE SOMBRE GENERALE  */
-/* ===================== */
-
+/* ========================= */
+/* MODE SOMBRE - GÉNÉRAL     */
+/* ========================= */
 body.dark-mode {
-    background-color: #0b0f1a; /* bleu très foncé/noir */
-    color: #e0e0e0; /* gris clair pour le texte */
+    background-color: #0b0f1a;
+    color: #e0e0e0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* HEADER */
+/* ========================= */
+/* HEADER                     */
+/* ========================= */
 body.dark-mode header {
-    background: #0a0d23; /* header sombre */
+    background-color: #0a0d23;
     box-shadow: 0 2px 8px rgba(117, 116, 116, 0.5);
 }
 
@@ -2813,25 +2697,29 @@ body.dark-mode nav a {
 
 body.dark-mode nav a:hover,
 body.dark-mode nav a.active {
-    color: #72aaff; /* bleu clair pour survol/active */
+    color: #72aaff;
 }
 
-/* BOUTONS */
+/* ========================= */
+/* BOUTONS                    */
+/* ========================= */
 body.dark-mode .btn,
 body.dark-mode .btn_retour,
 body.dark-mode .btn-cv {
     background: linear-gradient(90deg, #1b2a6b, #0b1b3f);
     color: #ffffff;
+    transition: background 0.3s, color 0.3s;
 }
 
 body.dark-mode .btn:hover,
 body.dark-mode .btn_retour:hover,
 body.dark-mode .btn-cv:hover {
     background: linear-gradient(90deg, #3a4fcc, #000b33);
-    color: #ffffff;
 }
 
-/* SECTIONS */
+/* ========================= */
+/* SECTIONS PRINCIPALES       */
+/* ========================= */
 body.dark-mode #profil,
 body.dark-mode .formation,
 body.dark-mode #parcours,
@@ -2840,10 +2728,11 @@ body.dark-mode .realisations,
 body.dark-mode #competences,
 body.dark-mode .veille-section,
 body.dark-mode .contact {
-    background-color: #0b0f1a; /* fond sombre uniforme */
+    background-color: #0b0f1a;
     color: #e9e2e2;
 }
 
+/* Cartes et éléments spécifiques */
 body.dark-mode .timeline-item,
 body.dark-mode .theme-card,
 body.dark-mode .text-block,
@@ -2853,31 +2742,27 @@ body.dark-mode .text-card,
 body.dark-mode .experience-card,
 body.dark-mode .info-box,
 body.dark-mode .mockup {
-    background: #121630; /* bleu foncé doux */
+    background-color: #121630;
     color: #e0e0e0;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 5px rgba(170, 169, 169, 0.5);
 }
 
-/* ===================== */
-/* TYPOGRAPHIE MODE SOMBRE PAR CLASSE */
-/* ===================== */
-
-/* Titres des sections */
+/* ========================= */
+/* TYPOGRAPHIE                */
+/* ========================= */
 body.dark-mode .titre-section,
 body.dark-mode .section-header h2 {
-    color: #ffffff; /* blanc cassé doux */
+    color: #ffffff;
 }
 
-/* Titres de projets, expériences, timeline, skills */
 body.dark-mode .projet-texte h3,
 body.dark-mode .experience-info h3,
 body.dark-mode .timeline-content h3,
 body.dark-mode .skill-card h4,
 body.dark-mode .text-card {
-    color: #c4d1ff; /* bleu clair doux pour titres secondaires */
+    color: #c4d1ff;
 }
 
-/* Paragraphes et textes normaux */
 body.dark-mode .projet-texte p,
 body.dark-mode .experience-card p,
 body.dark-mode .timeline-desc,
@@ -2885,24 +2770,19 @@ body.dark-mode .text-block,
 body.dark-mode .competences-container span,
 body.dark-mode .liens,
 body.dark-mode .source-info,
-body.dark-mode .problematique {
-    color: #c0c4d1; /* gris clair légèrement bleuté */
-}
-
-
-/* Listes dans formation ou projets */
+body.dark-mode .problematique,
 body.dark-mode .formation-card p,
 body.dark-mode .formation-card ul li,
 body.dark-mode .task-item span,
 body.dark-mode .competences-container li {
-    color: #c0c4d1;
+    color: #f0f1f3;
 }
 
 /* Liens */
 body.dark-mode a,
 body.dark-mode .cv-buttons .btn-cv,
 body.dark-mode .projet-links .btn {
-    color: #72aaff; /* bleu clair */
+    color: #72aaff;
 }
 
 body.dark-mode a:hover,
@@ -2914,38 +2794,35 @@ body.dark-mode .projet-links .btn:hover {
 /* Petits textes / muted */
 body.dark-mode small,
 body.dark-mode .muted-text {
-    color: #a0a8b8; /* gris moyen pour détails */
+    color: #a0a8b8;
 }
 
-/* TEXTE ET LIENS */
-body.dark-mode a {
-    color: #72aaff;
-}
-
-body.dark-mode a:hover {
-    color: #a0cfff;
-}
-
-/* ICONES TIMELINE */
+/* ========================= */
+/* ICONES TIMELINE            */
+/* ========================= */
 body.dark-mode .timeline-icon,
 body.dark-mode .timeline-icon-2 {
-    background: #1b2a6b;
+    background-color: #1b2a6b;
     color: #ffffff;
     border: 3px solid #3a4fcc;
 }
 
-/* PROGRESS BARS */
+/* ========================= */
+/* PROGRESS BARS              */
+/* ========================= */
 body.dark-mode .progress {
-    background: #1b1f2e;
+    background-color: #1b1f2e;
 }
 
 body.dark-mode .progress span {
     background: linear-gradient(90deg, #3a4fcc, #72aaff);
 }
 
-/* FOOTER */
+/* ========================= */
+/* FOOTER                     */
+/* ========================= */
 body.dark-mode .footer {
-    background: #0a0d23;
+    background-color: #0a0d23;
     color: #cccccc;
 }
 
@@ -2953,89 +2830,147 @@ body.dark-mode .footer a {
     color: #72aaff;
 }
 
-/* DARK MODE BUTTON */
+/* ========================= */
+/* BOUTON DARK MODE           */
+/* ========================= */
 #darkModeToggle {
+    position: fixed;
+    bottom: 80px;
+    right: 1rem;
+    width: 60px;
+    height: 60px;
     background: linear-gradient(135deg, #1b2a6b, #0b1b3f);
-    color: #ffffff;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s, background-color 0.2s;
+    z-index: 9999;
 }
 
 #darkModeToggle:hover {
-    background: linear-gradient(135deg, #3a4fcc, #000b33);
-    color: #ffffff;
-}
-/* ============================= */
-/* MENU BURGER - MODE SOMBRE */
-/* ============================= */
-body.dark-mode .menu-toggle a {
-  background: #2563eb;
-  color: #ffffff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    background-color: #000;
+    transform: translateY(-3px);
 }
 
-body.dark-mode .menu-toggle:hover {
-  background: #3b82f6;
+/* ========================= */
+/* MENU BURGER & NAVIGATION   */
+/* ========================= */
+.menu-toggle {
+    background: #1e293b;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    z-index: 1000;
 }
 
-body.dark-mode .nav-links a {
-  color: #000000;
+.menu-toggle:hover {
+    background: #2563eb;
 }
 
-body.dark-mode .nav-links a:hover {
-  color: #60a5fa;
+/* Menu burger ouvert */
+.menu-toggle.open {
+    background: #3b82f6;
 }
 
-body.dark-mode .nav-links li {
-  border-bottom: 1px solid #1e293b;
+/* Menu burger ouvert en mode sombre */
+body.dark-mode .menu-toggle.open {
+    background: #000;
 }
 
-body.dark-mode .menu-toggle {
-  background: #1e293b;
-  color: #ffffff;
-  border: none;
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.3s;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 999;
 }
 
-body.dark-mode .menu-toggle:hover {
-  background: #2563eb;
+nav ul.show {
+    display: flex;
 }
 
+/* Menu sombre mobile */
+body.dark-mode nav ul {
+    background-color: #0a0d23;
+}
+
+/* Liens */
+nav a {
+    text-decoration: none;
+    color: #0a0d23;
+    padding: 8px 12px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* Liens mode sombre */
 body.dark-mode nav a {
-  color: #ffffff;
+    color: #fff;
 }
 
 body.dark-mode nav a:hover {
-  color: #60a5fa;
+    color: #60a5fa;
 }
-/* MENU MOBILE SOMBRE */
+
+
+
+
+/* Navigation desktop */
+nav ul {
+    list-style: none;
+    display: flex;           /* affichage horizontal par défaut sur desktop */
+    flex-direction: row;
+    gap: 20px;
+    transition: all 0.3s;
+    position: static;        /* pas d'overlay sur desktop */
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Menu mobile caché par défaut */
 @media (max-width: 768px) {
+    nav ul {
+        display: none;       /* caché sur mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        z-index: 999;
+    }
 
-  body.dark-mode .nav-links {
-    background: #020617;
-  }
+    /* Mode sombre menu mobile */
+    body.dark-mode nav ul {
+        background-color: #020617;
+    }
 
-}
-
-/* DARK MODE TOGGLE BUTTON */
-#darkModeToggle {
-  position: fixed;
-  bottom: 80px; /* juste au-dessus du scroll-top (qui est à 1rem du bas) */
-  right: 1rem;  /* même alignement horizontal que le scroll-top */
-  width: 60px;
-  height: 60px;
-  background-color: #07248b;
-  color: #fff;
-  font-size: 24px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  transition: transform 0.2s, background-color 0.2s;
-  cursor: pointer;
-  z-index: 9999;
-}
-
-#darkModeToggle:hover {
-  background-color: #000;
-  transform: translateY(-3px);
+    /* Affichage menu mobile quand burger actif */
+    nav ul.show {
+        display: flex;
+    }
 }

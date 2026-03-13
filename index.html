@@ -67,8 +67,10 @@
 </section><br><br>
 
 
-<section id="parcours" data-aos="fade-up"> <h2 class="titre-section">Mon Parcours</h2> <div class="timeline-container"> 
-  <!-- 1. BAC (GAUCHE) --> <div class="timeline-item gauche"> 
+<section id="parcours" data-aos="fade-up"> 
+  <h2 class="titre-section">Mon Parcours</h2> 
+  <div class="timeline-container"> <!-- 1. BAC (GAUCHE) --> 
+    <div class="timeline-item gauche"> 
     <div class="timeline-content"> <h3>Baccalauréat Scientifique D</h3> 
       <span class="timeline-year">JEAN BAPTISTE TATY LOUTARD</span> 
       <span class="timeline-year">CONGO</span> 
@@ -727,23 +729,31 @@
   </script>
 
   <!-- menu burger -->
+  
+
   <script>
-     const menuToggle = document.querySelector('.menu-toggle');
-     const navMenu = document.querySelector('nav ul');
-     const navLinks = document.querySelectorAll('nav a');
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('nav ul');
+const navLinks = document.querySelectorAll('nav a');
 
-     // Ouvrir / fermer le menu quand on clique sur le burger
-     menuToggle.addEventListener('click', () => {
-     navMenu.classList.toggle('show');
-     });
+function isDarkMode() {
+  return document.body.classList.contains('dark-mode');
+}
 
-     // Fermer le menu quand on clique sur un lien
-     navLinks.forEach(link => {
-     link.addEventListener('click', () => {
-     navMenu.classList.remove('show');
-      });
-     });
-  </script>
+// Ouvrir / fermer menu burger
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+  menuToggle.classList.toggle('open');
+});
+
+// Fermer le menu quand on clique sur un lien
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('show');
+    menuToggle.classList.remove('open');
+  });
+});
+</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
