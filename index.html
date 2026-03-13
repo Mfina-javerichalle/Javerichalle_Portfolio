@@ -14,7 +14,8 @@
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
 
@@ -68,44 +69,86 @@
   </div>
 </section><br>
 
+<section id="parcours" data-aos="fade-up">
+  <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">
+    Parcours
+  </h2>
+  <br>
 
-<section id="parcours" data-aos="fade-up"> 
-  <h2 class="section-title">Parcours</h2> <br>
-  <div class="timeline-container"> <!-- 1. BAC (GAUCHE) --> 
-    <div class="timeline-item gauche"> 
-    <div class="timeline-content"> <h3>Baccalauréat Scientifique D</h3> 
-      <span class="timeline-year">JEAN BAPTISTE TATY LOUTARD</span> 
-      <span class="timeline-year">CONGO</span> 
-      <span class="timeline-year">2022 – 2023</span> 
-      <p class="timeline-desc"> Formation scientifique générale avec spécialisation en mathématiques et sciences physiques. </p> 
-      <button class="toggle-desc">Voir la description</button> 
-    </div> 
-    <div class="timeline-icon">🎓</div> </div> <!-- 2. INFOGRAPHIE (DROITE) --> 
-    <div class="timeline-item droite"> <div class="timeline-icon-2">🎨</div> 
-    <div class="timeline-content"> 
-      <h3>Formation Infographie</h3> 
-      <span class="timeline-year">BIG JUDGE COMMUNICATION</span> 
-      <span class="timeline-year">CONGO</span> 
-      <span class="timeline-year">Février – Juin 2024</span> 
-      <p class="timeline-desc"> Formation en conception graphique, design et outils créatifs (Photoshop, Illustrator). </p> 
-      <button class="toggle-desc">Voir la description</button> 
-    </div> 
-  </div> <!-- 3. BTS (GAUCHE) --> 
-  
-  <div class="timeline-item gauche"> 
-    <div class="timeline-content"> 
-      <h3>BTS SIO – Option SLAM</h3> 
-      <span class="timeline-year">SCHOLIA</span> <span class="timeline-year">FRANCE</span> <span class="timeline-year">2024 – 2026</span> <p class="timeline-desc"> Spécialisation en développement web et mobile. </p> <button class="toggle-desc">Voir la description</button> </div> <div class="timeline-icon">💻</div> </div> </div> </section>
+  <div class="timeline-container">
+
+    <!-- 1. BAC (GAUCHE) -->
+    <div class="timeline-item gauche"
+         data-aos="fade-right"
+         data-aos-duration="800"
+         data-aos-delay="0">
+      <div class="timeline-content">
+        <h3>Baccalauréat Scientifique D</h3>
+        <span class="timeline-year">JEAN BAPTISTE TATY LOUTARD</span>
+        <span class="timeline-year">CONGO</span>
+        <span class="timeline-year">2022 – 2023</span>
+        <p class="timeline-desc">
+          Formation scientifique générale avec spécialisation en mathématiques et sciences physiques.
+        </p>
+        <button class="toggle-desc">Voir la description</button>
+      </div>
+      <div class="timeline-icon">🎓</div>
+    </div>
+
+    <!-- 2. INFOGRAPHIE (DROITE) -->
+    <div class="timeline-item droite"
+         data-aos="fade-left"
+         data-aos-duration="1100"
+         data-aos-delay="150">
+      <div class="timeline-icon-2">🎨</div>
+      <div class="timeline-content">
+        <h3>Formation Infographie</h3>
+        <span class="timeline-year">BIG JUDGE COMMUNICATION</span>
+        <span class="timeline-year">CONGO</span>
+        <span class="timeline-year">Février – Juin 2024</span>
+        <p class="timeline-desc">
+          Formation en conception graphique, design et outils créatifs (Photoshop, Illustrator).
+        </p>
+        <button class="toggle-desc">Voir la description</button>
+      </div>
+    </div>
+
+    <!-- 3. BTS (GAUCHE) -->
+    <div class="timeline-item gauche"
+         data-aos="fade-right"
+         data-aos-duration="1200"
+         data-aos-delay="300">
+      <div class="timeline-content">
+        <h3>BTS SIO – Option SLAM</h3>
+        <span class="timeline-year">SCHOLIA</span>
+        <span class="timeline-year">FRANCE</span>
+        <span class="timeline-year">2024 – 2026</span>
+        <p class="timeline-desc">
+          Spécialisation en développement web et mobile.
+        </p>
+        <button class="toggle-desc">Voir la description</button>
+      </div>
+      <div class="timeline-icon">💻</div>
+    </div>
+
+  </div>
+</section>
+
 
  
 <br>
 
 <section class="formation-section" id="formation">
-  <h2 class="section-title">Formation</h2>
+  <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">
+    Formation
+  </h2>
 
   <div class="formation-container">
 
-    <div class="formation-card" data-aos="fade-up">
+    <div class="formation-card" 
+         data-aos="fade-up" 
+         data-aos-duration="800" 
+         data-aos-delay="0">
       <h3 class="formation-title">🎓 BTS SIO</h3>
       <p class="formation-desc">
         Le <strong>BTS Services Informatiques aux Organisations</strong> est une
@@ -120,7 +163,10 @@
       </div>
     </div>
 
-    <div class="formation-card" data-aos="fade-up" data-aos-delay="200">
+    <div class="formation-card"
+         data-aos="fade-up"
+         data-aos-duration="800"
+         data-aos-delay="150">
       <h3 class="formation-title">🖧 Option SISR</h3>
       <p class="formation-desc">
         L’option <strong>SISR</strong> forme des spécialistes des infrastructures
@@ -134,7 +180,10 @@
       </ul>
     </div>
 
-    <div class="formation-card highlight" data-aos="fade-up" data-aos-delay="400">
+    <div class="formation-card highlight"
+         data-aos="fade-up"
+         data-aos-duration="800"
+         data-aos-delay="300">
       <h3 class="formation-title">💻 Option SLAM</h3>
       <p class="formation-desc">
         L’option <strong>SLAM</strong> est orientée vers le développement
@@ -151,6 +200,7 @@
 
   </div>
 </section>
+
 <br><br>
 
   <!-- ==================== RÉALISATIONS ==================== -->
@@ -276,18 +326,17 @@
 
 </section>
 <br>
-
 <section id="competences" class="competences-section">
     <h2 class="section-title" data-aos="fade-up">Compétences</h2>
      <br><br>
   <!-- Filtres -->
-  <div class="filter-buttons" data-aos="fade-up" data-aos-delay="100">
-    <button class="filter-btn active" data-filter="all">Toutes</button>
-    <button class="filter-btn" data-filter="langages">Langages</button>
-    <button class="filter-btn" data-filter="bdd">Bases de données</button>
-    <button class="filter-btn" data-filter="pro">Compétences pro</button>
-    <button class="filter-btn" data-filter="soft">Soft skills</button>
-    <button class="filter-btn" data-filter="outils">Logiciels utilisés</button>
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all" data-aos="fade-up" data-aos-delay="50">Toutes</button>
+    <button class="filter-btn" data-filter="langages" data-aos="fade-up-right" data-aos-delay="300">Langages</button>
+    <button class="filter-btn" data-filter="bdd"data-aos="fade-right" data-aos-delay="600">Bases de données</button>
+    <button class="filter-btn" data-filter="pro" data-aos="fade-right" data-aos-delay="900">Compétences pro</button>
+    <button class="filter-btn" data-filter="soft" data-aos="fade-right" data-aos-delay="1200">Soft skills</button>
+    <button class="filter-btn" data-filter="outils" data-aos="fade-right" data-aos-delay="1500">Logiciels utilisés</button>
   </div>
 
   <div class="competences-container">
@@ -442,17 +491,21 @@
   </div>
 
 </section><br><br>
+<section id="experiences" class="experience-section" data-aos="fade-up">
+  <h2 class="section-title"
+      data-aos="fade-down"
+      data-aos-duration="800">
+    Expériences Professionnelles
+  </h2>
+  <br>
 
-
-
-
-
-<section id="experiences" class="experience-section">
-  <h2 class="section-title">Expériences Professionnelles</h2>
- <br>
   <div class="experience-container">
+
     <!-- EXPERIENCE 1 -->
-    <div class="experience-card">
+    <div class="experience-card"
+         data-aos="zoom-in-up"
+         data-aos-duration="800"
+         data-aos-delay="0">
       <div class="experience-header">
         <div class="experience-icon">🎬</div>
         <div class="experience-info">
@@ -467,36 +520,54 @@
       </p>
 
       <div class="tasks-grid">
-        <div class="task-item">
+        <div class="task-item" 
+         data-aos="fade-right"
+         data-aos-duration="800"
+         data-aos-delay="0">
           <span class="task-icon">👥</span>
-          <span style="color: black; ">Interfaces utilisateur (catalogue films, planning, réservations)</span>
+          <span style="color: black;">Interfaces utilisateur (catalogue films, planning, réservations)</span>
         </div>
-        <div class="task-item">
+        <div class="task-item"  data-aos="fade-right"
+         data-aos-duration="900"
+         data-aos-delay="0">
           <span class="task-icon">⚙️</span>
-          <span style="color: black; ">Espace administrateur (gestion films, utilisateurs)</span>
+          <span style="color: black;">Espace administrateur (gestion films, utilisateurs)</span>
         </div>
-        <div class="task-item">
+        <div class="task-item" data-aos="fade-right"
+         data-aos-duration="1000"
+         data-aos-delay="0">
           <span class="task-icon">🔍</span>
-          <span style="color: black; ">Pages dynamiques (recherche, filtres, détails film)</span>
+          <span style="color: black;">Pages dynamiques (recherche, filtres, détails film)</span>
         </div>
-        <div class="task-item">
+        <div class="task-item" 
+         data-aos="fade-right"
+         data-aos-duration="1200"
+         data-aos-delay="0">
           <span class="task-icon">📱</span>
-          <span style="color: black; ">Structure responsive multi-écrans</span>
+          <span style="color: black;">Structure responsive multi-écrans</span>
         </div>
-        <div class="task-item">
+        <div class="task-item" 
+         data-aos="fade-right"
+         data-aos-duration="1300"
+         data-aos-delay="0">
           <span class="task-icon">🔗</span>
-          <span style="color: black; ">Intégration front-end/back-end</span>
+          <span style="color: black;">Intégration front-end/back-end</span>
         </div>
-        <div class="task-item">
+        <div class="task-item"
+         data-aos="fade-right"
+         data-aos-duration="1400"
+         data-aos-delay="0">
           <span class="task-icon">✅</span>
-          <span style="color: black; ">Test et optimisation des fonctionnalités</span>
+          <span style="color: black;">Test et optimisation des fonctionnalités</span>
         </div>
       </div>
     </div>
 
-    
     <!-- EXPERIENCE 2 -->
-    <div class="experience-card">
+    <div class="experience-card"
+         data-aos="zoom-in-up"
+         data-aos-duration="800"
+         data-aos-delay="200">
       <div class="experience-header">
         <div class="experience-icon">🏗️</div>
         <div class="experience-info">
@@ -505,7 +576,10 @@
         </div>
       </div>
 
-      <p class="experience-desc">
+      <p class="experience-desc"  
+        data-aos="fade-up-left"
+         data-aos-duration="900"
+         data-aos-delay="0">
         J'ai conçu et structuré l'<strong>architecture technique complète</strong> du site web, 
         définissant précisément la disposition des sections, la hiérarchie des pages et 
         l'organisation des éléments d'interface. Mon travail a permis de créer une base 
@@ -513,17 +587,26 @@
       </p>
 
       <div class="tasks-grid">
-        <div class="task-item">
+        <div class="task-item" 
+        data-aos="fade-right"
+         data-aos-duration="1000"
+         data-aos-delay="0">
           <span class="task-icon">📋</span>
           <span style="color: black;">Définition précise du positionnement et de la hiérarchie visuelle</span>
         </div>
-        <div class="task-item">
+        <div class="task-item"
+         data-aos="fade-right"
+         data-aos-duration="1100"
+         data-aos-delay="0">
           <span class="task-icon">🧩</span>
           <span style="color: black;">Planification des sections, blocs et modules fonctionnels</span>
         </div>
-        <div class="task-item">
+        <div class="task-item"
+         data-aos="fade-right"
+         data-aos-duration="1200"
+         data-aos-delay="0">
           <span class="task-icon">📄</span>
-          <span style="color: black; ">Documentation détaillée des spécifications d'architecture</span>
+          <span style="color: black;">Documentation détaillée des spécifications d'architecture</span>
         </div>
       </div>
     </div>
@@ -531,9 +614,7 @@
   </div>
 </section>
 
-
 <br><br>
-
   
 <section id="veille-tech" class="veille-section">
   <div class="container">
@@ -651,9 +732,6 @@
 </section>
 
 
-
-
-
    <section class="contact" id="contact">
    <h2>CONTACT</h2>
     <p class="intro">
@@ -706,20 +784,14 @@
        </p>
      </div>
 
-<form class="contact-form" id="contactForm">
+<form id="contactForm">
 
-  <div class="form-group double">
-    <input type="text" name="nom" placeholder="Votre nom" required>
-    <input type="email" name="email" placeholder="Votre mail" required>
-  </div>
+<input type="text" name="nom" required>
+<input type="email" name="email" required>
+<input type="text" name="objet" required>
+<textarea name="message" required></textarea>
 
-  <input type="text" name="objet" placeholder="Objet" required>
-
-  <textarea name="message" placeholder="Message" rows="6" required></textarea>
-
-  <button type="submit">Envoyer le message</button>
-
-  <p id="form-message"></p>
+<button type="submit">Envoyer</button>
 
 </form>
    </div>
@@ -890,36 +962,47 @@ if(localStorage.getItem('darkMode') === 'true'){
 
 
 
+
+
+
+
+
+
+
+<!-- EmailJS (UNE SEULE FOIS !) -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
 <script>
+
 (function(){
 emailjs.init("4HViR3OZb6d7AG1L3");
 })();
-</script>
- template_Id0nr6j
-<script>
 
 const form = document.getElementById("contactForm");
-const message = document.getElementById("form-message");
 
-form.addEventListener("submit", function(e) {
+form.addEventListener("submit", function(e){
 
 e.preventDefault();
 
 emailjs.sendForm(
 "service_Chaidaa@26",
 "template_0i8ga1h",
-this)
+this
+)
 
-.then(function() {
+.then(function(){
 
-message.innerHTML = "✅ Message envoyé avec succès !";
-message.style.color = "green";
+alert("Message envoyé !");
 form.reset();
 
-}, function(error) {
+})
 
-message.innerHTML = "❌ Erreur lors de l'envoi.";
-message.style.color = "red";
+.catch(function(error){
+
+console.log("EMAILJS ERROR:", error);
+alert("Erreur lors de l'envoi");
 
 });
 
