@@ -8,11 +8,10 @@
 /* =============================== */
 /* H2 UNIFIÉS POUR TOUT LE SITE (MODE CLAIR) */
 /* =============================== */
-
 h2,
 .titre-section,
-.competences h2
-.formation h2
+.competences h2,
+.formation h2,
 .section-header h2,
 .experience-info h2,
 .projet-texte h2,
@@ -22,18 +21,18 @@ h2,
 .content-block h2,
 .theme-card h2,
 .text-block h2 {
-    color: #07248b;          /* noir uniforme */
+    color: #07248b;          /* bleu uniforme */
     font-size: 2rem;         /* taille uniforme */
-    font-weight: 700;        /* gras si besoin */
-    text-align: center;
+    font-weight: 700;        /* gras */
     line-height: 1.4;        /* hauteur de ligne cohérente */
     margin-top: 1.5rem;      /* espace au-dessus */
     margin-bottom: 1rem;     /* espace en-dessous */
+    text-align: center;
 }
 
-
-
+/* =============================== */
 /* HEADER */
+/* =============================== */
 header {
   display: flex;
   justify-content: space-between;
@@ -71,7 +70,9 @@ nav a.active {
   color: #002b33;
 }
 
+/* =============================== */
 /* MENU BURGER */
+/* =============================== */
 .menu-toggle {
   display: none;
   background: none;
@@ -119,9 +120,9 @@ nav a.active {
   }
 }
 
-
-
+/* =============================== */
 /* BOUTON RETOUR */
+/* =============================== */
 .btn_retour {
   width: 140px;
   height: 50px;
@@ -143,7 +144,6 @@ nav a.active {
   background: linear-gradient(90deg, #4570f3, #131418);
 }
 
-/* Responsive bouton retour */
 @media (max-width: 992px) {
   .btn_retour {
     width: 130px;
@@ -162,7 +162,9 @@ nav a.active {
   }
 }
 
+/* =============================== */
 /* SECTION PROFIL */
+/* =============================== */
 #profil {
   position: relative;
   overflow: hidden;
@@ -172,7 +174,6 @@ nav a.active {
   z-index: 0;
 }
 
-/* Bulle gauche */
 #profil::before {
   content: "";
   position: absolute;
@@ -187,7 +188,6 @@ nav a.active {
   background: #ffffff;
 }
 
-/* Dégradé bas */
 #profil::after {
   content: "";
   position: absolute;
@@ -200,7 +200,9 @@ nav a.active {
   pointer-events: none;
 }
 
+/* =============================== */
 /* HERO */
+/* =============================== */
 .hero {
   position: relative;
   z-index: 10;
@@ -211,7 +213,7 @@ nav a.active {
   padding: 80px 80px 0;
 }
 
-.hero-text h2 {
+.hero-title h2 {
   font-size: 42px;
   font-weight: 700;
   color: #07248b;
@@ -417,8 +419,9 @@ nav a.active {
   }
 }
 
-
+/* =============================== */
 /* SECTION FORMATION */
+/* =============================== */
 .formation {
   padding: 100px 8%;
   background: white;
@@ -501,6 +504,53 @@ nav a.active {
   animation: arrowMove 1.5s infinite ease-in-out;
 }
 
+/* Animation flèche */
+@keyframes arrowMove {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+/* =============================== */
+/* Responsive Formation */
+/* =============================== */
+@media (max-width: 992px) {
+  .formation {
+    padding: 80px 6%;
+  }
+
+  .formation-card {
+    padding: 20px;
+  }
+
+  .bts-orientation {
+    font-size: 1.1rem;
+    gap: 10px;
+  }
+
+  .bts-orientation .arrow {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .formation {
+    padding: 60px 4%;
+  }
+
+  .formation-card {
+    padding: 15px;
+  }
+
+  .bts-orientation {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1rem;
+  }
+
+  .bts-orientation .arrow {
+    font-size: 1.4rem;
+  }
+}
 
 
 @keyframes arrowMove {
@@ -836,9 +886,11 @@ nav a.active {
 
 
 
-/* SECTION COMPÉTENCES */
+/* =============================== */
+/* SECTION COMPÉTENCES RÉAJUSTÉE */
+/* =============================== */
 #competences {
-  padding: 110px 8%;
+  padding: 110px 12%;  /* augmenté de 8% à 12% pour plus d'espace latéral */
   background: #ffffff;
   min-height: 100vh;
 }
@@ -881,10 +933,24 @@ nav a.active {
 }
 
 /* GRILLE */
+
+
 #competences .competences-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 260px));
   gap: 35px;
+
+  justify-content: center;   /* centre les cards */
+  max-width: 1100px;         /* limite la largeur */
+  margin: 0 auto;            /* centre toute la grille */
+}
+@media (max-width: 992px) {
+  #competences .competences-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 230px));
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 
 #competences .skills-title {
@@ -961,117 +1027,27 @@ nav a.active {
 
 /* Filtrage safe */
 #competences .hide {
-  /* visibility: hidden; */
   opacity: 0;
   height: 0;
   margin: 0;
   padding: 0;
-  display:none;
-  /* overflow: hidden; */
+  display: none;
   transform: scale(0.95);
   transition: all 0.3s ease;
 }
 
-/* Responsive compétences */
-@media (max-width: 400px) {
-  #competences {
-    padding: 60px 4%;
-  }
 
-  #competences .titre-section {
-    font-size: 1.4rem;
-  }
 
-  #competences .filter-buttons {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
-  }
-
-  #competences .filter-btn {
-    width: 100%;
-    font-size: 0.85rem;
-  }
-
-  #competences .competences-container {
-    grid-template-columns: 1fr;
-    gap: 22px;
-  }
-
-  #competences .skills-title {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  #competences {
-    padding: 70px 5%;
-  }
-
-  #competences .titre-section {
-    font-size: 1.6rem;
-  }
-
-  #competences .skill-card {
-    padding: 22px;
-  }
-
-  #competences .skill-card img {
-    max-width: 75px;
-  }
-
-  #competences .skills-title {
-    font-size: 1.35rem;
-  }
-
-  #competences .text-card {
-    font-size: 0.95rem;
-  }
-}
-
+/* =============================== */
+/* RESPONSIVE COMPÉTENCES */
+/* =============================== */
 @media (max-width: 992px) {
   #competences {
-    padding: 85px 6%;
-  }
-
-  #competences .competences-container {
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  }
-
-  #competences .titre-section {
-    font-size: 1.9rem;
-  }
-
-  #competences .skills-title {
-    font-size: 1.55rem;
+    padding: 90px 8%;  /* espace réduit pour tablette */
   }
 }
 
-@media (min-width: 1600px) {
-  #competences {
-    padding: 150px 14%;
-  }
 
-  #competences .titre-section {
-    font-size: 2.7rem;
-  }
-
-  #competences .skills-title {
-    font-size: 2rem;
-  }
-
-  #competences .skill-card {
-    padding: 35px;
-  }
-
-  #competences .skill-card h4 {
-    font-size: 1.3rem;
-  }
-
-  #competences .text-card {
-    font-size: 1.15rem;
-  }
-}
 
 
 /* SECTION EXPERIENCE */
@@ -2827,7 +2803,7 @@ body.dark-mode {
 /* HEADER */
 body.dark-mode header {
     background: #0a0d23; /* header sombre */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 8px rgba(117, 116, 116, 0.5);
 }
 
 body.dark-mode header h1,
@@ -2889,7 +2865,7 @@ body.dark-mode .mockup {
 /* Titres des sections */
 body.dark-mode .titre-section,
 body.dark-mode .section-header h2 {
-    color: #07248b; /* blanc cassé doux */
+    color: #ffffff; /* blanc cassé doux */
 }
 
 /* Titres de projets, expériences, timeline, skills */
@@ -2912,6 +2888,7 @@ body.dark-mode .source-info,
 body.dark-mode .problematique {
     color: #c0c4d1; /* gris clair légèrement bleuté */
 }
+
 
 /* Listes dans formation ou projets */
 body.dark-mode .formation-card p,
@@ -2985,6 +2962,56 @@ body.dark-mode .footer a {
 #darkModeToggle:hover {
     background: linear-gradient(135deg, #3a4fcc, #000b33);
     color: #ffffff;
+}
+/* ============================= */
+/* MENU BURGER - MODE SOMBRE */
+/* ============================= */
+body.dark-mode .menu-toggle a {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+body.dark-mode .menu-toggle:hover {
+  background: #3b82f6;
+}
+
+body.dark-mode .nav-links a {
+  color: #000000;
+}
+
+body.dark-mode .nav-links a:hover {
+  color: #60a5fa;
+}
+
+body.dark-mode .nav-links li {
+  border-bottom: 1px solid #1e293b;
+}
+
+body.dark-mode .menu-toggle {
+  background: #1e293b;
+  color: #ffffff;
+  border: none;
+}
+
+body.dark-mode .menu-toggle:hover {
+  background: #2563eb;
+}
+
+body.dark-mode nav a {
+  color: #ffffff;
+}
+
+body.dark-mode nav a:hover {
+  color: #60a5fa;
+}
+/* MENU MOBILE SOMBRE */
+@media (max-width: 768px) {
+
+  body.dark-mode .nav-links {
+    background: #020617;
+  }
+
 }
 
 /* DARK MODE TOGGLE BUTTON */
