@@ -14,7 +14,7 @@
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 <body>
 
@@ -242,6 +242,37 @@
       </div>
     </div>
   </div>
+
+  <!-- Projet 5 : Portfolio Développeur -->
+<div class="projet-section">
+  <div class="projet-container">
+
+    <div class="mockup" data-aos="fade-right" data-aos-delay="300">
+      <img src="portfolio_mockup.jpeg" class="mockup-desktop" alt="Mockup du portfolio développeur">
+    </div>
+
+    <div class="projet-texte" data-aos="fade-left" data-aos-delay="300">
+      <h3 class="projet-title">Portfolio Développeur Web</h3>
+
+      <p class="projet-tech">
+        <strong>Technologies :</strong> HTML, CSS, JavaScript
+      </p>
+
+      <p class="projet-desc">
+        Conception et développement complet d’un portfolio professionnel permettant de
+        présenter mes compétences, mes projets, mon parcours et ma veille technologique.
+        Le site est entièrement responsive, optimisé pour différents écrans et intègre
+        plusieurs fonctionnalités modernes comme le mode sombre, les animations
+        interactives et un menu mobile.
+      </p>
+
+      <div class="projet-links">
+        <a href="#" target="_blank" class="btn">Voir le site</a>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 </section>
 <br>
@@ -675,16 +706,22 @@
        </p>
      </div>
 
-     <form class="contact-form">
-       <div class="form-group double">
-         <input type="text" placeholder="Votre nom" required>
-         <input type="email" placeholder="Votre mail" required>
-       </div>
+<form class="contact-form" id="contactForm">
 
-       <input type="text" placeholder="Objet" required>
-       <textarea placeholder="Message" rows="6" required></textarea>
-       <button type="submit">Envoyer le message</button>
-     </form>
+  <div class="form-group double">
+    <input type="text" name="nom" placeholder="Votre nom" required>
+    <input type="email" name="email" placeholder="Votre mail" required>
+  </div>
+
+  <input type="text" name="objet" placeholder="Objet" required>
+
+  <textarea name="message" placeholder="Message" rows="6" required></textarea>
+
+  <button type="submit">Envoyer le message</button>
+
+  <p id="form-message"></p>
+
+</form>
    </div>
  </section>
 </main>
@@ -853,7 +890,43 @@ if(localStorage.getItem('darkMode') === 'true'){
 
 
 
+<script>
+(function(){
+emailjs.init("Chaidaa@26");
+})();
+</script>
 
+<script>
+
+const form = document.getElementById("contactForm");
+const message = document.getElementById("form-message");
+
+form.addEventListener("submit", function(e) {
+
+e.preventDefault();
+
+emailjs.sendForm(
+"SERVICE_ID_ICI",
+"TEMPLATE_ID_ICI",
+this
+)
+
+.then(function() {
+
+message.innerHTML = "✅ Message envoyé avec succès !";
+message.style.color = "green";
+form.reset();
+
+}, function(error) {
+
+message.innerHTML = "❌ Erreur lors de l'envoi.";
+message.style.color = "red";
+
+});
+
+});
+
+</script>
 
 </body>
 </html>

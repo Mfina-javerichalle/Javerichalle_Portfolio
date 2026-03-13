@@ -55,7 +55,7 @@ header h1 {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 10px;
 }
 
 nav a {
@@ -2941,7 +2941,7 @@ nav ul {
     list-style: none;
     display: flex;           /* affichage horizontal par défaut sur desktop */
     flex-direction: row;
-    gap: 20px;
+    gap: 2px;
     transition: all 0.3s;
     position: static;        /* pas d'overlay sur desktop */
     background: none;
