@@ -2423,7 +2423,7 @@ nav a.active {
   .timeline-item,
   .timeline-item.gauche,
   .timeline-item.droite {
-    width: 100%;
+    width: 90%;
     left: 0;
     margin-left: 35px;
     
