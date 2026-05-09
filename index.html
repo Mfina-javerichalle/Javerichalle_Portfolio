@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Javerichalle</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- police (typographie) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header data-aos="zoom-in-right" data-aos-delay="200">
+  <h1 class="site-title">Javerichalle MFINA</h1>
+  <button class="menu-toggle" aria-label="Menu">☰</button>
+  <nav id="nav-menu">
+    <ul>
+      <li><a href="#profil">Profil</a></li>
+      <li><a href="#parcours">Parcours</a></li>
+      <li><a href="#formation">Formation</a></li>
+      <li><a href="#realisation">Réalisations</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#experiences">Expériences</a></li>
+      <li><a href="#veille-tech">Veille</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="profil" class="hero-section">
+  <div class="hero">
+    <div class="hero-text">
+      <h2 class="hero-title" data-aos="zoom-in-right" data-aos-delay="200" style="--title: #07248b;">
+        Javerichalle Maconslavie
+      </h2>
+      <h3 class="hero-subtitle" data-aos="zoom-in-left" data-aos-delay="200">
+        BTS-SIO, Option SLAM
+      </h3>
+      <p class="hero-description" data-aos="fade-right" data-aos-delay="1500">
+       <i>Je suis étudiante en deuxième année de BTS SIO à SCHOLIA, <br> spécialisée
+        dans le développement web et mobile. <br> J'aime concevoir des sites modernes, fonctionnels et <br> responsives, avec une structure claire et optimisée.</i> 
+      </p>
+      <div class="cv-buttons">
+        <a href="CV_Mfina_Dev.pdf" download class="btn-cv" title="Télécharger ou voir mon CV">Mon CV</a>
+      </div>
+      <div class="liens_icones">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Mfina-javerichalle/"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="jav-image" data-aos="flip-left" data-aos-delay="400">
+      <img src="/images/jav.jpg" alt="Photo">
+    </div>
+  </div>
+</section><br>
+
+<section id="parcours" data-aos="fade-up">
+  <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Parcours</h2>
+  <br>
+  <div class="timeline-container">
+
+    <div class="timeline-item gauche" data-aos="fade-right" data-aos-duration="800" data-aos-delay="0">
+      <div class="timeline-content">
+        <h3>Baccalauréat Scientifique D</h3>
+        <span class="timeline-year">JEAN BAPTISTE TATY LOUTARD</span>
+        <span class="timeline-year">CONGO</span>
+        <span class="timeline-year">2022 – 2023</span>
+        <p class="timeline-desc">
+          Formation scientifique générale avec spécialisation en mathématiques et sciences physiques.
+        </p>
+        <button class="toggle-desc">Voir la description</button>
+      </div>
+      <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+    </div>
+
+    <div class="timeline-item droite" data-aos="fade-left" data-aos-duration="1100" data-aos-delay="150">
+      <div class="timeline-icon-2"><i class="fas fa-pen-nib"></i></div>
+      <div class="timeline-content">
+        <h3>Formation Infographie</h3>
+        <span class="timeline-year">BIG JUDGE COMMUNICATION</span>
+        <span class="timeline-year">CONGO</span>
+        <span class="timeline-year">Février – Juin 2024</span>
+        <p class="timeline-desc">
+          Formation en conception graphique, design et outils créatifs (Photoshop, Illustrator).
+        </p>
+        <button class="toggle-desc">Voir la description</button>
+      </div>
+    </div>
+
+    <div class="timeline-item gauche" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
+      <div class="timeline-content">
+        <h3>BTS SIO – Option SLAM</h3>
+        <span class="timeline-year">SCHOLIA</span>
+        <span class="timeline-year">FRANCE</span>
+        <span class="timeline-year">2024 – 2026</span>
+        <p class="timeline-desc">
+          Spécialisation en développement web et mobile.
+        </p>
+        <button class="toggle-desc">Voir la description</button>
+      </div>
+      <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+    </div>
+
+  </div>
+</section>
+
+<br>
+
+<section class="formation-section" id="formation">
+  <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Formation</h2>
+  <div class="formation-container">
+
+    <div class="formation-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
+      <h3 class="formation-title"><i class="fas fa-graduation-cap"></i> BTS SIO</h3>
+      <p class="formation-desc">
+        Le <strong>BTS Services Informatiques aux Organisations</strong> est une
+        formation Bac+2 orientée vers les métiers de l'informatique.
+        Elle prépare à une insertion professionnelle rapide ou à une poursuite
+        d'études dans le numérique.
+      </p>
+      <div class="bts-orientation">
+        <span>Orienté vers deux options de spécialisation</span>
+        <span class="arrow">➜</span>
+      </div>
+    </div>
+
+    <div class="formation-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+      <h3 class="formation-title"><i class="fas fa-network-wired"></i> Option SISR</h3>
+      <p class="formation-desc">
+        L'option <strong>SISR</strong> forme des spécialistes des infrastructures
+        informatiques. Elle est axée sur l'administration des systèmes,
+        la gestion des réseaux, la sécurité et la maintenance.
+      </p>
+      <ul>
+        <li>Administration systèmes et réseaux</li>
+        <li>Sécurité informatique</li>
+        <li>Support et maintenance</li>
+      </ul>
+    </div>
+
+    <div class="formation-card highlight" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+      <h3 class="formation-title"><i class="fas fa-code"></i> Option SLAM</h3>
+      <p class="formation-desc">
+        L'option <strong>SLAM</strong> est orientée vers le développement
+        d'applications et de solutions logicielles métiers.
+        Elle couvre l'analyse des besoins, la programmation et la gestion
+        des bases de données.
+      </p>
+      <ul>
+        <li> Développement web et applicatif</li>
+        <li> Analyse et conception logicielle</li>
+        <li> Maintenance des applications</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<br><br>
+
+<!-- ==================== RÉALISATIONS ==================== -->
+<section class="realisations-section" id="realisation">
+  <br><br>
+  <h2 class="section-title">Réalisations</h2>
+  <br>
+
+  <!-- FILTRES — sans AOS -->
+  <div class="projet-filter-buttons">
+    <button class="projet-filter-btn active" data-pfilter="all">Tous les projets</button>
+    <button class="projet-filter-btn" data-pfilter="stage">Projets de stage</button>
+    <button class="projet-filter-btn" data-pfilter="ecole">Projets scolaires</button>
+    <button class="projet-filter-btn" data-pfilter="perso">Projets personnels</button>
+  </div>
+
+  <!-- GRILLE — data-category sur chaque carte, sans AOS -->
+  <div class="projets-grid">
+
+    <!-- AGS_CINE — STAGE -->
+    <div class="projet-card" data-category="stage">
+      <div class="projet-card-image">
+        <img src="/images/CINE.png" alt="Mockup du site AGS_CINE">
+        <div class="projet-card-badge stage">Stage</div>
+      </div>
+      <div class="projet-card-body">
+        <h3 class="projet-card-title">Site de Cinéma AGS_CINE</h3>
+        <p class="projet-tech"><strong>Technologies :</strong> PHP, MySQL, HTML, CSS, Bootstrap, JavaScript</p>
+        <p class="projet-card-desc">
+          Développement d'une plateforme permettant de gérer les films, les salles, les séances et l'affichage dynamique du cinéma AGS_CINE.
+        </p>
+        <div class="projet-card-links">
+          <a href="http://localhost/CINE-AGS/index.php" target="_blank" class="btn">Voir le site</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Business-Privé — STAGE -->
+    <div class="projet-card" data-category="stage">
+      <div class="projet-card-image">
+        <img src="/images/businessprive_mockup_ultralight (1).jpg" alt="Mockup du site Business-Privé">
+        <div class="projet-card-badge stage">Stage</div>
+      </div>
+      <div class="projet-card-body">
+        <h3 class="projet-card-title">Site Vitrine Business-Privé</h3>
+        <p class="projet-tech"><strong>Technologies :</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+        <p class="projet-card-desc">
+          Développement complet d'un site vitrine responsive pour une entreprise privée.
+        </p>
+        <div class="projet-card-links">
+          <a href="https://business-prive.com/" target="_blank" class="btn">Voir le site</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte Projet Météo React Native -->
+<div class="projet-card" data-category="ecole">
+  <div class="projet-card-image">
+       <img src="/images/meteo.jpeg" alt="Mockup du site Business-Privé">
+        <div class="projet-card-badge ecole">scolaires</div>  
+  </div>
+
+   <div class="projet-card-body">
+        <h3 class="projet-card-title">Application Météo</h3>
+        <p class="projet-tech"><strong>Technologies :</strong> React Native, Expo, Open-Meteo API,JavaScript</p>
+        <p class="projet-card-desc">
+    Application mobile React Native affichant la météo en temps réel via géolocalisation et recherche par ville.</p>
+     <div class="projet-card-links">
+          <a href="https://github.com/Mfina-javerichalle/meteo" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+  
+
+    <!-- DreamTrip — ÉCOLE -->
+    <div class="projet-card" data-category="ecole">
+      <div class="projet-card-image">
+        <img src="/images/mockup_voyage.jpeg" alt="Mockup du site DreamTrip">
+        <div class="projet-card-badge ecole">scolaires</div>
+      </div>
+      <div class="projet-card-body">
+        <h3 class="projet-card-title">Plateforme de Voyage – DreamTrip</h3>
+        <p class="projet-tech"><strong>Technologies :</strong> HTML, CSS, JavaScript, PHP</p>
+        <p class="projet-card-desc">
+          Conception et développement d'un site web de voyage moderne permettant de découvrir des destinations, consulter des offres et effectuer des réservations en ligne.
+        </p>
+        <div class="projet-card-links">
+          <a href="https://mfina-javerichalle.github.io/dream_trip/" target="_blank" class="btn">Voir le site</a>
+          <a href="https://github.com/Mfina-javerichalle/dream_trip.git" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  <div class="projet-card" data-category="ecole">
+  <div class="projet-card-image">
+    <img src="/images/python_mockup.jpeg" alt="Projets Python">
+    <div class="projet-card-badge ecole">scolaires</div>
+  </div>
+  <div class="projet-card-body">
+    <h3 class="projet-card-title">Projets Python — Jeux Interactifs</h3>
+    <p class="projet-tech"><strong>Technologies :</strong> Python, Pygame, Tkinter, CustomTkinter</p>
+    <p class="projet-card-desc">
+      Développement en équipe de 3 jeux interactifs : un <strong>jeu Snake</strong> 
+      avec niveaux et obstacles (Pygame), un <strong>quiz sur l'architecture 
+      informatique</strong> (CustomTkinter) et un <strong>jeu Vrai ou Faux</strong> 
+      avec interface graphique (Tkinter). Pratique de la POO, des interfaces 
+      graphiques et de la logique applicative en Python.
+    </p>
+    <div class="projet-card-links">
+     <a href="https://github.com/Mfina-javerichalle/projet-python-jeux" target="_blank" class="btn">GitHub</a>    </div>
+  </div>
+</div>
+
+        <!-- Elyon Consulting -->
+    <div class="projet-card" data-category="perso">
+      <div class="projet-card-image">
+        <img src="/images/elyon_mockup.png" alt="Mockup du site Elyon Consulting">
+        <div class="projet-card-badge perso">Personnel</div>
+      </div>
+      <div class="projet-card-body">
+        <h3 class="projet-card-title">Elyon Consulting</h3>
+        <p class="projet-tech"><strong>Technologies :</strong> Laravel 12, PHP 8.3, MySQL, Blade, Bootstrap 5.3, Sanctum, o2switch</p>
+        <p class="projet-card-desc">
+          Application web complète de gestion de dossiers visa & accompagnement voyage. Espace client (suivi dossier en temps réel, upload documents, messagerie), espace admin (CRUD, validation, gestion utilisateurs), authentification sécurisée, déployée en production sur <strong>elyon-consulting.com</strong>.
+        </p>
+        <div class="projet-card-links">
+          <a href="https://elyon-consulting.com" target="_blank" class="btn">Voir le site</a>
+        </div>
+      </div>
+    </div>
+
+            <!-- Jaëlle Hair — -->
+    <div class="projet-card" data-category="perso">
+      <div class="projet-card-image">
+        <img src="/images/jaellehair_mockup.jpeg" alt="Mockup du site Jaëlle Hair">
+        <div class="projet-card-badge perso">Personnel</div>
+      </div>
+      <div class="projet-card-body">
+        <h3 class="projet-card-title">Site Jaëlle Hair</h3>
+        <p class="projet-tech"><strong>Technologies :</strong> HTML, CSS, JavaScript, PHP</p>
+        <p class="projet-card-desc">
+          Création du site vitrine professionnel pour le salon <strong>Jaëlle Hair</strong>. Prestations, tarifs, galerie, contact. Projet complet réalisé de A à Z.
+        </p>
+        <div class="projet-card-links">
+          <a href="https://jaelle-hair.fr" class="btn" target="_blank">Voir le site</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio — PERSO -->
+    <div class="projet-card" data-category="perso">
+      <div class="projet-card-image">
+        <img src="/images/portfolio_mockup.jpeg" alt="Mockup du portfolio développeur">
+        <div class="projet-card-badge perso">Personnel</div>
+      </div>
+      <div class="projet-card-body">
+        <h3 class="projet-card-title">Portfolio Développeur Web</h3>
+        <p class="projet-tech"><strong>Technologies :</strong> HTML, CSS, JavaScript</p>
+        <p class="projet-card-desc">
+          Conception et développement complet d'un portfolio professionnel responsive avec mode sombre, animations interactives et menu mobile.
+        </p>
+        <div class="projet-card-links">
+          <a href="#" target="_blank" class="btn">Voir le site</a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</section>
+
+<br>
+
+<section id="competences" class="competences-section">
+  <h2 class="section-title" data-aos="fade-up">Compétences</h2>
+  <br><br>
+
+  <!-- FILTRES -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">Toutes</button>
+    <button class="filter-btn" data-filter="langages">Langages</button>
+    <button class="filter-btn" data-filter="frameworks">Frameworks</button>
+    <button class="filter-btn" data-filter="bdd">Bases de données</button>
+    <button class="filter-btn" data-filter="pro">Compétences pro</button>
+    <button class="filter-btn" data-filter="soft">Soft skills</button>
+    <button class="filter-btn" data-filter="outils">Logiciels utilisés</button>
+  </div>
+
+  <div class="competences-container">
+
+    <!-- ===== LANGAGES ===== -->
+    <h3 class="skills-title skills-langages">Langages de programmation</h3>
+
+    <div class="skill-card langages">
+      <img src="/images/html.png" alt="HTML">
+      <h4 class="skill-title">HTML</h4>
+      <div class="progress"><span style="width: 95%"></span></div>
+    </div>
+    <div class="skill-card langages">
+      <img src="/images/css.png" alt="CSS">
+      <h4 class="skill-title">CSS</h4>
+      <div class="progress"><span style="width: 90%"></span></div>
+    </div>
+    <div class="skill-card langages">
+      <img src="/images/js.png" alt="JavaScript">
+      <h4 class="skill-title">JavaScript</h4>
+      <div class="progress"><span style="width: 85%"></span></div>
+    </div>
+    <div class="skill-card langages">
+      <img src="/images/php.png" alt="PHP">
+      <h4 class="skill-title">PHP</h4>
+      <div class="progress"><span style="width: 80%"></span></div>
+    </div>
+    <div class="skill-card langages">
+      <img src="/images/python.png" alt="Python">
+      <h4 class="skill-title">Python</h4>
+      <div class="progress"><span style="width: 50%"></span></div>
+    </div>
+    <div class="skill-card langages">
+      <img src="/images/java.png" alt="Java">
+      <h4 class="skill-title">Java</h4>
+      <div class="progress"><span style="width: 60%"></span></div>
+    </div>
+    <div class="skill-card langages">
+      <img src="/images/sql.png" alt="SQL">
+      <h4 class="skill-title">SQL</h4>
+      <div class="progress"><span style="width: 85%"></span></div>
+    </div>
+
+    <!-- ===== FRAMEWORKS & LIBRAIRIES ===== -->
+    <h3 class="skills-title skills-langages" style="--cat-color: #e25822;">Frameworks & Librairies</h3>
+
+    <div class="skill-card frameworks">
+      <img src="/images/laravel.png" alt="Laravel">
+      <h4 class="skill-title">Laravel 11</h4>
+      <div class="progress"><span style="width: 65%"></span></div>
+    </div>
+    <div class="skill-card frameworks">
+      <img src="/images/bootstrap.png" alt="Bootstrap">
+      <h4 class="skill-title">Bootstrap 5</h4>
+      <div class="progress"><span style="width: 70%"></span></div>
+    </div>
+    <div class="skill-card frameworks">
+      <img src="/images/react-native.png" alt="React Native">
+      <h4 class="skill-title">React Native</h4>
+      <div class="progress"><span style="width: 45%"></span></div>
+    </div>
+    <div class="skill-card frameworks">
+      <img src="/images/aos.png" alt="AOS JS">
+      <h4 class="skill-title">AOS JS</h4>
+      <div class="progress"><span style="width: 90%"></span></div>
+    </div>
+    <div class="skill-card frameworks">
+      <img src="/images/blade.png" alt="Blade">
+      <h4 class="skill-title">Blade (Laravel)</h4>
+      <div class="progress"><span style="width: 60%"></span></div>
+    </div>
+    <div class="skill-card frameworks">
+      <img src="/images/expo.png" alt="Expo">
+      <h4 class="skill-title">Expo</h4>
+      <div class="progress"><span style="width: 35%"></span></div>
+    </div>
+
+    <!-- ===== BASES DE DONNÉES ===== -->
+    <h3 class="skills-title skills-bdd">Gestion de bases de données</h3>
+
+    <div class="skill-card bdd">
+      <img src="/images/mysql.png" alt="MySQL">
+      <h4 class="skill-title">MySQL</h4>
+      <div class="progress"><span style="width: 85%"></span></div>
+    </div>
+    <div class="skill-card bdd">
+      <img src="/images/phpmyadmin.png" alt="phpMyAdmin">
+      <h4 class="skill-title">phpMyAdmin</h4>
+      <div class="progress"><span style="width: 80%"></span></div>
+    </div>
+
+    <!-- ===== COMPÉTENCES PRO ===== -->
+    <h3 class="skills-title skills-pro">Compétences professionnelles</h3>
+
+    <div class="text-card pro">Analyse des besoins</div>
+    <div class="text-card pro">Développement d'applications</div>
+    <div class="text-card pro">Maintenance applicative</div>
+    <div class="text-card pro">Gestion de projet</div>
+    <div class="text-card pro">Modélisation UML (StarUML)</div>
+    <div class="text-card pro">Tests et débogage API (Postman)</div>
+    <div class="text-card pro">Déploiement web (o2switch)</div>
+    <div class="text-card pro">Gestion de versions (Git / GitHub)</div>
+    <div class="text-card pro">Sécurisation d'API (Sanctum)</div>
+
+    <!-- ===== SOFT SKILLS ===== -->
+    <h3 class="skills-title skills-soft">Soft skills</h3>
+
+    <div class="text-card soft">Travail en équipe</div>
+    <div class="text-card soft">Autonomie</div>
+    <div class="text-card soft">Organisation</div>
+    <div class="text-card soft">Adaptabilité</div>
+    <div class="text-card soft">Curiosité technique</div>
+    <div class="text-card soft">Rigueur</div>
+
+    <!-- ===== LOGICIELS ===== -->
+    <h3 class="skills-title skills-outils">Logiciels utilisés</h3>
+
+    <div class="skill-card outils">
+      <img src="/images/vscode.png" alt="VS Code">
+      <h4 class="skill-title">Visual Studio Code</h4>
+      <div class="progress"><span style="width: 90%"></span></div>
+    </div>
+    <div class="skill-card outils">
+      <img src="/images/xampp.png" alt="XAMPP">
+      <h4 class="skill-title">XAMPP</h4>
+      <div class="progress"><span style="width: 80%"></span></div>
+    </div>
+    <div class="skill-card outils">
+      <img src="/images/github.png" alt="GitHub">
+      <h4 class="skill-title">GitHub / Bitbucket</h4>
+      <div class="progress"><span style="width: 75%"></span></div>
+    </div>
+    <div class="skill-card outils">
+      <img src="/images/postman.png" alt="Postman">
+      <h4 class="skill-title">Postman</h4>
+      <div class="progress"><span style="width: 65%"></span></div>
+    </div>
+    <div class="skill-card outils">
+      <img src="/images/staruml.png" alt="StarUML">
+      <h4 class="skill-title">StarUML</h4>
+      <div class="progress"><span style="width: 70%"></span></div>
+    </div>
+    <div class="skill-card outils">
+      <img src="/images/eclipse.png" alt="Eclipse">
+      <h4 class="skill-title">Eclipse</h4>
+      <div class="progress"><span style="width: 65%"></span></div>
+    </div>
+    <div class="skill-card outils">
+      <img src="/images/anaconda.png" alt="Anaconda">
+      <h4 class="skill-title">Anaconda</h4>
+      <div class="progress"><span style="width: 60%"></span></div>
+    </div>
+    <div class="skill-card outils">
+      <img src="/images/lucidchart.png" alt="Lucidchart">
+      <h4 class="skill-title">Lucidchart</h4>
+      <div class="progress"><span style="width: 70%"></span></div>
+    </div>
+    <div class="skill-card outils">
+      <img src="/images/composer.png" alt="Composer">
+      <h4 class="skill-title">Composer</h4>
+      <div class="progress"><span style="width: 60%"></span></div>
+    </div>
+    <div class="skill-card outils">
+  <img src="/images/figma.png" alt="Figma">
+  <h4 class="skill-title">Figma</h4>
+  <div class="progress"><span style="width: 55%"></span></div>
+</div>
+
+  </div>
+</section><br><br>
+
+<section id="experiences" class="experience-section">
+  <h2 class="section-title">Expériences Professionnelles</h2>
+  <br>
+  <div class="experience-container">
+
+            <!-- EXPERIENCE : Elyon Consulting -->
+    <div class="experience-card">
+      <div class="experience-header">
+        <div class="experience-icon"><i class="fas fa-globe"></i></div>
+        <div class="experience-info">
+          <h3 class="experience-title">Développeuse Web Full-Stack – Elyon Consulting</h3>
+          <span class="experience-date">Elyon Consulting — Octobre 2025 – Mai 2026</span>
+        </div>
+      </div>
+      <p class="experience-desc">
+        Conception et développement complet d'une <strong>application web de gestion de dossiers de mobilité internationale</strong> (visas étudiants, touristiques, de travail). Application full-stack Laravel / Blade + Bootstrap 5, avec espace client, espace admin et API REST, déployée en production sur <strong>elyon-consulting.com</strong>.
+      </p>
+      <div class="tasks-grid">
+        <div class="task-item">
+          <span class="task-icon"><i class="fas fa-user"></i></span>
+          <span style="color: black;">Espace client : création de dossier, suivi de progression, upload documents, messagerie</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon"><i class="fas fa-sliders-h"></i></span>
+          <span style="color: black;">Espace admin : CRUD services, documents requis, étapes, infos visa, gestion utilisateurs</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon"><i class="fas fa-lock"></i></span>
+          <span style="color: black;">Authentification sécurisée par session : inscription, connexion, middleware admin/client, réinitialisation mot de passe par email</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon"><i class="fas fa-database"></i></span>
+          <span style="color: black;">Base de données MySQL : migrations et seeders Eloquent, relations hasMany / belongsTo</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon"><i class="fas fa-project-diagram"></i></span>
+          <span style="color: black;">Modélisation UML avec StarUML : diagrammes cas d'utilisation, classes, séquence</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon"><i class="fas fa-code"></i></span>
+          <span style="color: black;">API REST sécurisée (JSON) avec Laravel Sanctum pour future intégration mobile</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon"><i class="fas fa-server"></i></span>
+          <span style="color: black;">Déploiement o2switch : HTTPS, Gmail SMTP, symlink storage, configuration .env production</span>
+        </div>
+      </div>
+    </div>
+    <!-- EXPERIENCE  : Cinéma -->
+    <div class="experience-card">
+      <div class="experience-header">
+        <div class="experience-icon"><i class="fas fa-film"></i></div>
+        <div class="experience-info">
+          <h3 class="experience-title">Stage : Développeuse Web Fullstack – Projet Cinéma</h3>
+          <span class="experience-date">AGS IT — Octobre – Novembre 2025</span>
+        </div>
+      </div>
+      <p class="experience-desc">
+        Développement complet d'un <strong>site de cinéma moderne</strong> avec 
+        interface utilisateur fluide, fonctionnalités dynamiques et gestion de données.
+      </p>
+      <div class="tasks-grid">
+        <div class="task-item">
+          <span class="task-icon"><i class="fas fa-desktop"></i></span>
+          <span style="color: black;">Interfaces utilisateur (catalogue films, planning, réservations)</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon"><i class="fas fa-user-shield"></i></span>
+          <span style="color: black;">Espace administrateur (gestion films, utilisateurs)</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon"><i class="fas fa-search"></i></span>
+          <span style="color: black;">Pages dynamiques (recherche, filtres, détails film)</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon"><i class="fas fa-mobile-alt"></i></span>
+          <span style="color: black;">Structure responsive multi-écrans</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon"><i class="fas fa-plug"></i></span>
+          <span style="color: black;">Intégration front-end/back-end</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon"><i class="fas fa-check-circle"></i></span>
+          <span style="color: black;">Test et optimisation des fonctionnalités</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE : Business Privé -->
+    <div class="experience-card">
+      <div class="experience-header">
+        <div class="experience-icon"><i class="fas fa-sitemap"></i></div>
+        <div class="experience-info">
+          <h3 class="experience-title">STAGE : Conceptrice d'Architecture Web</h3>
+          <span class="experience-date">Business Privé — Juillet – Août 2025 (5 semaines)</span>
+        </div>
+      </div>
+      <p class="experience-desc">
+        J'ai conçu et structuré l'<strong>architecture technique complète</strong> du site web, 
+        définissant précisément la disposition des sections, la hiérarchie des pages et 
+        l'organisation des éléments d'interface. Mon travail a permis de créer une base 
+        solide et cohérente pour l'ensemble du projet.
+      </p>
+      <div class="tasks-grid">
+        <div class="task-item">
+          <span class="task-icon"><i class="fas fa-layer-group"></i></span>
+          <span style="color: black;">Définition précise du positionnement et de la hiérarchie visuelle</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon"><i class="fas fa-th-large"></i></span>
+          <span style="color: black;">Planification des sections, blocs et modules fonctionnels</span>
+        </div>
+        <div class="task-item">
+          <span class="task-icon"><i class="fas fa-file-alt"></i></span>
+          <span style="color: black;">Documentation détaillée des spécifications d'architecture</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<br><br>
+
+<section id="veille-tech" class="veille-section">
+  <div class="container">
+    <h2 class="section-title">Veille Technologique</h2>
+    <div class="section-header">
+      <h5 style="font-size: 1rem;">Thème : L'intelligence artificielle</h5><br>
+      <p class="problematique" style="color: black;">
+        Problématique : Comment fonctionne réellement l'intelligence artificielle générative ?
+      </p>
+    </div>
+
+    <div class="theme-card">
+      <h3 class="theme-title">Thème 1 : Les bases du fonctionnement de l'IA</h3>
+      <div class="content-block">
+        <div class="text-block-container">
+          <div class="text-block">
+            <img src="/images/IA_image1.png" alt="Illustration IA réseaux neuronaux" class="block-icon">
+            <h4 class="text-title">Apprendre à partir de données</h4>
+            <p>L'intelligence artificielle repose sur des algorithmes, c'est‑à‑dire des suites d'instructions mathématiques permettant à une machine de traiter des données et de produire un résultat. Pour apprendre, elle s'appuie sur de grandes quantités d'exemples comme des textes, des images ou des sons, afin d'identifier des motifs et des relations dans les données.</p>
+            <div class="source-info">Source : exploreia.fr / Octobre 2025</div>
+          </div>
+          <div class="text-block">
+            <img src="/images/IA_image2 (2).png" alt="Illustration deep learning" class="block-icon">
+            <h4 class="text-title">Le rôle des réseaux neuronaux</h4>
+            <p>Le deep learning est une technique d'intelligence artificielle basée sur des réseaux de neurones artificiels inspirés du cerveau humain. Ces réseaux sont composés de plusieurs couches qui analysent les données et permettent à l'IA d'apprendre des relations complexes afin de reconnaître des images, des sons ou encore du texte.</p>
+            <div class="source-info">Source : exploreia.fr / Octobre 2025</div>
+          </div>
+          <div class="text-block">
+            <img src="/images/AI_image3.jpeg" alt="Illustration IA générative" class="block-icon">
+            <h4 class="text-title">Créer à partir de ce qui a été appris</h4>
+            <p>Une fois entraînée sur de nombreuses données, l'IA générative est capable de produire du contenu nouveau comme du texte, des images ou du son. À partir d'une consigne ou d'un exemple, elle génère un résultat cohérent en s'appuyant sur les probabilités et les relations qu'elle a apprises lors de son entraînement.</p>
+            <div class="source-info">Source : Nom du site — 12 Mars 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="theme-card">
+      <h3 class="theme-title">Thème 2 : L'impact des données sur l'efficacité des algorithmes d'IA</h3>
+      <div class="content-block">
+        <div class="text-block-container">
+          <div class="text-block">
+            <img src="/images/IA_image4.png" alt="Qualité des données" class="block-icon">
+            <h4 class="text-title">L'importance des données de qualité</h4>
+            <p>Les données sont un élément essentiel du fonctionnement de l'intelligence artificielle. Leur qualité, leur quantité et leur diversité influencent directement la performance des algorithmes, car elles servent de base pour analyser les informations et produire des prédictions fiables.</p>
+            <div class="source-info">Source : automatesintelligents.com — Mars 2026</div>
+          </div>
+          <div class="text-block">
+            <img src="/images/IA_image7.png" alt="Entraînement IA" class="block-icon">
+            <h4 class="text-title">L'entraînement des algorithmes</h4>
+            <p>Les modèles d'IA doivent être entraînés à partir de jeux de données représentatifs afin d'apprendre à reconnaître des relations entre différentes informations. Des données variées et sans biais permettent d'obtenir des résultats plus précis et cohérents.</p>
+            <div class="source-info">Source : automatesintelligents.com — Mars 2026</div>
+          </div>
+          <div class="text-block">
+            <img src="/images/IA_image6.png" alt="Optimisation des données" class="block-icon">
+            <h4 class="text-title">L'optimisation des données</h4>
+            <p>Avant d'être utilisées, les données doivent souvent être nettoyées et organisées afin d'améliorer les performances des algorithmes. Des techniques comme le filtrage ou l'enrichissement des données permettent d'obtenir des modèles d'IA plus efficaces.</p>
+            <div class="source-info">Source : automatesintelligents.com — Mars 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>CONTACT</h2>
+  <p class="intro">
+    Si vous avez une question, une demande, un projet ou juste une envie d'en savoir un peu plus sur moi, n'hésitez surtout pas. <br>
+    <strong>Contactez-moi !</strong>
+  </p>
+  <div class="contact-infos">
+    <div class="info-box">
+      <h3>Localisation</h3>
+      <p>91000 Évry-Courcouronnes, France</p>
+    </div>
+    <div class="info-box">
+      <h3>Adresse mail</h3>
+      <p>
+        <a href="mailto:mfinajaverichalle@gmail.com?subject=Contact%20depuis%20votre%20site&body=Bonjour%20Javerichalle,%0A%0AJe%20souhaite%20vous%20contacter%20concernant...">
+          mfinajaverichalle@gmail.com
+        </a>
+      </p>
+    </div>
+    <div class="info-box">
+      <h3>Linkedin</h3>
+      <p>
+        <a href="https://www.linkedin.com/in/javerichalle-mfina-ba4747371/">linkedin.com/in/javerichalle-mfina</a>
+      </p>
+    </div>
+  </div>
+  <div class="contact-content">
+    <div class="map-section">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.0000000000003!2d2.4350000000000005!3d48.634000000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e63f0000000001%3A0x0000000000000000!2sÉvry-Courcouronnes+91000!5e0!3m2!1sfr!2sfr!4v0000000000000"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+      <p class="liens">
+        Liens :
+        <a href="https://www.linkedin.com/in/javerichalle-mfina-b3a527352" target="_blank" rel="noopener noreferrer">LinkedIn</a> • 
+        <a href="https://github.com/Mfina-javerichalle/" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <div class="form-group double">
+        <input type="text" name="nom" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre mail" required>
+      </div>
+      <input type="text" name="objet" placeholder="Objet" required>
+      <textarea name="message" placeholder="Message" rows="6" required></textarea>
+      <button type="submit">Envoyer le message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>MFINA</h3>
+      <p>Développeur Web & Mobile</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:mfinajaverichalle@gmail.com">Email</a>
+      <a href="https://github.com/Mfina-javerichalle/" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+    <div class="footer-right">
+      <p>© 2025 Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
+<button id="darkModeToggle" class="menu-toggle">🌙</button>
+<a href="#profil" class="scroll-top-btn">↑</a>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a2e0e9c6f0.js" crossorigin="anonymous"></script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: false });
+</script>
+
+<!-- Menu burger -->
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('nav ul');
+const navLinks = document.querySelectorAll('nav a');
+
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+  menuToggle.classList.toggle('open');
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('show');
+    menuToggle.classList.remove('open');
+  });
+});
+</script>
+
+<!-- Filtre compétences -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll("#competences .filter-btn");
+  const items = document.querySelectorAll("#competences .skill-card, #competences .text-card");
+  const titles = document.querySelectorAll("#competences .skills-title");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const filter = button.dataset.filter;
+
+      items.forEach(item => {
+        if (filter === "all" || item.classList.contains(filter)) {
+          item.classList.remove("hide");
+        } else {
+          item.classList.add("hide");
+        }
+      });
+
+      titles.forEach(title => {
+        const category = title.dataset.category;
+        const relatedItems = Array.from(items).filter(item => item.classList.contains(category));
+        const hasVisibleItem = relatedItems.some(item => !item.classList.contains("hide"));
+        if (filter === "all" || hasVisibleItem) {
+          title.classList.remove("hide");
+        } else {
+          title.classList.add("hide");
+        }
+      });
+    });
+  });
+});
+</script>
+
+<!-- Toggle description parcours -->
+<script>
+document.querySelectorAll("#parcours .toggle-desc").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const desc = btn.previousElementSibling;
+    if (desc.style.display === "block") {
+      desc.style.display = "none";
+      btn.textContent = "Voir la description";
+    } else {
+      desc.style.display = "block";
+      btn.textContent = "Cacher la description";
+    }
+  });
+});
+</script>
+
+<!-- Dark mode -->
+<script>
+const darkModeToggle = document.getElementById('darkModeToggle');
+
+darkModeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+  localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+});
+
+if (localStorage.getItem('darkMode') === 'true') {
+  document.body.classList.add('dark-mode');
+  darkModeToggle.textContent = '☀️';
+}
+</script>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+emailjs.init("4HViR3OZb6d7AG1L3");
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  emailjs.sendForm("service_1wlh3bf", "template_ld0nr6j", this)
+    .then(function() {
+      alert("✔ Message envoyé avec succès !");
+      document.getElementById("contactForm").reset();
+    })
+    .catch(function(error) {
+      console.log("EMAILJS ERROR:", error);
+      alert("❌ Une erreur est survenue");
+    });
+});
+</script>
+
+<!-- Filtre projets réalisations -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const filterBtns = document.querySelectorAll(".projet-filter-btn");
+  const cards = document.querySelectorAll(".projet-card");
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      filterBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const filter = btn.dataset.pfilter;
+
+      cards.forEach(card => {
+        if (filter === "all" || card.dataset.category === filter) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+    });
+  });
+});
+</script>
+
+</body>
+</html>
